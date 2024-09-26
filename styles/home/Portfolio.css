@@ -1,0 +1,38 @@
+.portfolio {
+    padding: 50px 0;
+    background-color: #f0fafc;
+    text-align: center;
+  }
+  
+  .portfolio-item {
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 50px;
+  }
+  
+  .portfolio-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+  
+  .portfolio-content {
+    padding: 15px;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .swiper-button-next, .swiper-button-prev {
+    color: #357A98;
+  }
+  
+  .swiper-pagination-bullet {
+    background: #357A98;
+  }
+  

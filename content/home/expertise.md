@@ -1,0 +1,20 @@
+---
+title: "Diese IT Kenntnisse haben wir"
+knowledgeItems:
+  - title: "Frontend"
+    icon: "/img/it-personal.png"
+  - title: "Backend"
+    icon: "/img/puzzle.png"
+  - title: "Fullstack"
+    icon: "/img/it-personal.png"
+  - title: "Datenbanken"
+    icon: "/img/puzzle.png"
+  - title: "Scripte"
+    icon: "/img/it-personal.png"
+  - title: "DevOps"
+    icon: "/img/puzzle.png"
+  - title: "Projektplanung"
+    icon: "/img/it-personal.png"
+  - title: "Security"
+    icon: "/img/puzzle.png"
+---
