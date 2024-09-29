@@ -9,7 +9,7 @@ collections:
   - name: "home"
     label: "Home"
     folder: "content/home"
-    create: true
+    file: "content/home/index.md" 
     fields:
       - name: "title"
         label: "Title"
@@ -23,10 +23,12 @@ collections:
       - name: "ctaLink"
         label: "CTA Link"
         widget: "string"
-      # Challenges Section
+      
+      # Challenges Section verlinkt auf challenges.md
       - name: "challenges"
         label: "Challenges Section"
         widget: "object"
+        file: "content/home/challenges.md" 
         fields:
           - label: "Title"
             name: "title"
