@@ -9,6 +9,7 @@ collections:
   - name: "home"
     label: "Home"
     extension: "md"
+    create: true
     files:
       - file: "content/home/index.md" # Verwalte eine einzelne Datei
         label: "Home"
