@@ -28,6 +28,9 @@ collections:
             widget: "string"
 
           # Challenges Section
+          - name: "challengesTitle"
+            label: "Challenges Section Title"
+            widget: "string"
           - name: "challenges"
             label: "Challenges Section"
             widget: "list"
@@ -43,6 +46,9 @@ collections:
                 widget: "image"
 
           # Solutions Section
+          - name: "solutionsTitle"
+            label: "Solutions Section Title"
+            widget: "string"
           - name: "solutions"
             label: "Solutions Section"
             widget: "list"
@@ -65,6 +71,9 @@ collections:
                     widget: "string"
 
           # Services Section
+          - name: "servicesTitle"
+            label: "Services Section Title"
+            widget: "string"
           - name: "services"
             label: "Services"
             widget: "list"
@@ -82,9 +91,12 @@ collections:
                 name: "image"
                 widget: "image"
 
-          # Expertise Section (Knowledge Items)
+          # Expertise Section
+          - name: "expertiseTitle"
+            label: "Expertise Section Title"
+            widget: "string"
           - name: "knowledgeItems"
-            label: "Expertise Section"
+            label: "Expertise Section (Knowledge Items)"
             widget: "list"
             fields:
               - label: "Item Title"
@@ -95,6 +107,9 @@ collections:
                 widget: "image"
 
           # Portfolio Section
+          - name: "portfolioTitle"
+            label: "Portfolio Section Title"
+            widget: "string"
           - name: "portfolioItems"
             label: "Portfolio"
             widget: "list"
