@@ -11,6 +11,12 @@ collections:
     folder: "content/home"
     create: true
     fields:
+      - name: "Titel"
+        label: "Titel"
+        widget: "string"
+      - name: "Titel Description"
+        label: "Titel Description"
+        widget: "string"
       - name: "challenges"
         label: "Challenges Section"
         widget: "object"
@@ -52,25 +58,3 @@ collections:
               - label: "Image"
                 name: "image"
                 widget: "image"
-
-  - name: "services"
-    label: "Services"
-    folder: "content/home"
-    create: true
-    fields:
-      - label: "Services"
-        name: "services"
-        widget: "list"
-        fields:
-          - label: "Service Title"
-            name: "title"
-            widget: "string"
-          - label: "Description"
-            name: "description"
-            widget: "text"
-          - label: "Button Link"
-            name: "buttonLink"
-            widget: "string"
-          - label: "Image"
-            name: "image"
-            widget: "image"
