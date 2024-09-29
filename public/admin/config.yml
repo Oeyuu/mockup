@@ -8,6 +8,7 @@ public_folder: img
 collections:
   - name: "home"
     label: "Home"
+    folder: "content/home"
     file: "content/home/index.md" 
     fields:
       - name: "title"
@@ -22,6 +23,7 @@ collections:
       - name: "ctaLink"
         label: "CTA Link"
         widget: "string"
+      
       
       # Challenges Section verlinkt auf challenges.md
       - name: "challenges"
