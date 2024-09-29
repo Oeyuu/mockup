@@ -19,8 +19,7 @@ challenges:
     description: "Du stehst vor einem wichtigen IT-Projekt, aber die Einstellung eines Vollzeit-Mitarbeiters wäre überdimensioniert. Du suchst nach einer flexiblen Lösung, bei der du genau die Expertise erhältst, die du brauchst."
     icon: "/img/puzzle.png"
 # Solutions Section
-solutionsTitle: "Wir sind die Lösung zum Problem!
-Mit uns ist euer Erfolg sicher."
+solutionsTitle: "Wir sind die Lösung zum Problem! Mit uns ist euer Erfolg sicher."
 solutions:
   - title: "Effiziente IT-Projektumsetzung"
     description: "Unsere IT-Beratung hilft Ihnen, Projekte pünktlich und effizient abzuschließen. Wir identifizieren potenzielle Engpässe und bieten maßgeschneiderte Lösungen, um technische Schwierigkeiten und Verzögerungen zu minimieren."
