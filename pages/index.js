@@ -24,7 +24,6 @@ export default function Home({ navbar, footer, title, subtitle, ctaText, ctaLink
     </>
   );
 }
-
 export async function getStaticProps() {
   const homeFilePath = path.join(process.cwd(), 'content', 'home', 'index.md');
   const homeFileContent = fs.readFileSync(homeFilePath, 'utf8');
@@ -42,20 +41,20 @@ export async function getStaticProps() {
     props: {
       navbar: navbarData.navbar,
       footer: footerData.footer,
-      title: homeData.title,
-      subtitle: homeData.subtitle,
-      ctaText: homeData.ctaText,
-      ctaLink: homeData.ctaLink,
-      challengesTitle: homeData.challengesTitle,
-      challenges: homeData.challenges,
-      solutionsTitle: homeData.solutionsTitle,
-      solutions: homeData.solutions,
-      servicesTitle: homeData.servicesTitle,
-      services: homeData.services,
-      expertiseTitle: homeData.expertiseTitle,
-      knowledgeItems: homeData.knowledgeItems,
-      portfolioTitle: homeData.portfolioTitle,
-      portfolioItems: homeData.portfolioItems,
+      title: homeData.title || "Default Title", // Fallback falls undefined
+      subtitle: homeData.subtitle || "Default Subtitle",
+      ctaText: homeData.ctaText || "Default CTA Text",
+      ctaLink: homeData.ctaLink || "/default-link",
+      challengesTitle: homeData.challengesTitle || "Challenges", // Fallback-Wert für challengesTitle
+      challenges: homeData.challenges || [], // Sicherstellen, dass challenges nicht undefined ist
+      solutionsTitle: homeData.solutionsTitle || "Solutions",
+      solutions: homeData.solutions || [],
+      servicesTitle: homeData.servicesTitle || "Services",
+      services: homeData.services || [],
+      expertiseTitle: homeData.expertiseTitle || "Expertise",
+      knowledgeItems: homeData.knowledgeItems || [],
+      portfolioTitle: homeData.portfolioTitle || "Portfolio",
+      portfolioItems: homeData.portfolioItems || [],
     },
   };
 }

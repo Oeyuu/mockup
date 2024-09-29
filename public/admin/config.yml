@@ -8,8 +8,9 @@ public_folder: img
 collections:
   - name: "home"
     label: "Home"
+    extension: "md"
     files:
-      - file: "content/home/index.md" # Eine einzige Datei, die alle Inhalte enthält
+      - file: "content/home/index.md" # Verwalte eine einzelne Datei
         label: "Home"
         name: "home"
         fields:
@@ -25,7 +26,7 @@ collections:
           - name: "ctaLink"
             label: "CTA Link"
             widget: "string"
-          
+
           # Challenges Section
           - name: "challenges"
             label: "Challenges Section"
@@ -40,7 +41,7 @@ collections:
               - label: "Icon"
                 name: "icon"
                 widget: "image"
-          
+
           # Solutions Section
           - name: "solutions"
             label: "Solutions Section"
@@ -62,7 +63,7 @@ collections:
                   - label: "Point"
                     name: "point"
                     widget: "string"
-          
+
           # Services Section
           - name: "services"
             label: "Services"
@@ -80,7 +81,7 @@ collections:
               - label: "Image"
                 name: "image"
                 widget: "image"
-          
+
           # Expertise Section (Knowledge Items)
           - name: "knowledgeItems"
             label: "Expertise Section"
@@ -92,7 +93,7 @@ collections:
               - label: "Icon"
                 name: "icon"
                 widget: "image"
-          
+
           # Portfolio Section
           - name: "portfolioItems"
             label: "Portfolio"
