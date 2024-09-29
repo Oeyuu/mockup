@@ -10,71 +10,52 @@ import Services from '../components/home/Services';
 import Expertise from '../components/home/Expertise';
 import Portfolio from '../components/home/Portfolio';
 
-export default function Home({ navbar, title, subtitle, ctaText, ctaLink, challengesTitle, challenges, solutionTitle, solutions, services, expertiseTitle, knowledgeItems, portfolioTitle, portfolioItems, footer }) {  
+export default function Home({ navbar, footer, title, subtitle, ctaText, ctaLink, challengesTitle, challenges, solutionsTitle, solutions, servicesTitle, services, expertiseTitle, knowledgeItems, portfolioTitle, portfolioItems }) {
   return (
     <>
       <Navbar navbar={navbar} />
       <Title title={title} subtitle={subtitle} ctaText={ctaText} ctaLink={ctaLink} />
       <ChallengesSection title={challengesTitle} challenges={challenges} />
-      <SolutionSection title={solutionTitle} solutions={solutions} />
-      <Services services={services} /> 
+      <SolutionSection title={solutionsTitle} solutions={solutions} />
+      <Services title={servicesTitle} services={services} /> 
       <Expertise title={expertiseTitle} knowledgeItems={knowledgeItems} />
       <Portfolio title={portfolioTitle} portfolioItems={portfolioItems} />
-      <Footer footer={footer}     />
+      <Footer footer={footer} />
     </>
   );
 }
+
 export async function getStaticProps() {
   const homeFilePath = path.join(process.cwd(), 'content', 'home', 'index.md');
   const homeFileContent = fs.readFileSync(homeFilePath, 'utf8');
   const { data: homeData } = matter(homeFileContent);
 
-  const challengesFilePath = path.join(process.cwd(), 'content', 'home', 'challenges.md');
-  const challengesFileContent = fs.readFileSync(challengesFilePath, 'utf8');
-  const { data: challengesData } = matter(challengesFileContent);
-
-  const solutionFilePath = path.join(process.cwd(), 'content', 'home', 'solution.md');
-  const solutionFileContent = fs.readFileSync(solutionFilePath, 'utf8');
-  const { data: solutionData } = matter(solutionFileContent);
-
-  const servicesFilePath = path.join(process.cwd(), 'content', 'home', 'services.md');
-  const servicesFileContent = fs.readFileSync(servicesFilePath, 'utf8');
-  const { data: servicesData } = matter(servicesFileContent);
-
-  const expertiseFilePath = path.join(process.cwd(), 'content', 'home', 'expertise.md');
-  const expertiseFileContent = fs.readFileSync(expertiseFilePath, 'utf8');
-  const { data: expertiseData } = matter(expertiseFileContent);
-
-  const portfolioFilePath = path.join(process.cwd(), 'content', 'home', 'portfolio.md');
-  const portfolioFileContent = fs.readFileSync(portfolioFilePath, 'utf8');
-  const { data: portfolioData } = matter(portfolioFileContent);
+  const navbarFilePath = path.join(process.cwd(), 'content', 'navbar.md');
+  const navbarFileContent = fs.readFileSync(navbarFilePath, 'utf8');
+  const { data: navbarData } = matter(navbarFileContent);
 
   const footerFilePath = path.join(process.cwd(), 'content', 'footer.md');
   const footerFileContent = fs.readFileSync(footerFilePath, 'utf8');
   const { data: footerData } = matter(footerFileContent);
 
-  const navbarFilePath = path.join(process.cwd(), 'content', 'navbar.md');
-  const navbarFileContent = fs.readFileSync(navbarFilePath, 'utf8');
-  const { data: navbarData } = matter(navbarFileContent);
-
   return {
     props: {
       navbar: navbarData.navbar,
+      footer: footerData.footer,
       title: homeData.title,
       subtitle: homeData.subtitle,
       ctaText: homeData.ctaText,
       ctaLink: homeData.ctaLink,
-      challengesTitle: challengesData.title,
-      challenges: challengesData.challenges,
-      solutionTitle: solutionData.title,
-      solutions: solutionData.solutions,
-      services: servicesData.services,
-      expertiseTitle: expertiseData.title,
-      knowledgeItems: expertiseData.knowledgeItems,
-      portfolioTitle: portfolioData.title,
-      portfolioItems: portfolioData.portfolioItems,
-      footer:footerData.footer,
-      
+      challengesTitle: homeData.challengesTitle,
+      challenges: homeData.challenges,
+      solutionsTitle: homeData.solutionsTitle,
+      solutions: homeData.solutions,
+      servicesTitle: homeData.servicesTitle,
+      services: homeData.services,
+      expertiseTitle: homeData.expertiseTitle,
+      knowledgeItems: homeData.knowledgeItems,
+      portfolioTitle: homeData.portfolioTitle,
+      portfolioItems: homeData.portfolioItems,
     },
   };
 }
