@@ -10,7 +10,7 @@ import Services from '../components/home/Services';
 import Expertise from '../components/home/Expertise';
 import Portfolio from '../components/home/Portfolio';
 
-export default function Home({ navbar, title, subtitle, ctaText, ctaLink, challengesTitle, challenges, solutionTitle, solutions, services, expertiseTitle, knowledgeItems, portfolioTitle, portfolioItems, footerData }) {  // Make sure footerData is passed here
+export default function Home({ navbar, title, subtitle, ctaText, ctaLink, challengesTitle, challenges, solutionTitle, solutions, services, expertiseTitle, knowledgeItems, portfolioTitle, portfolioItems, footer }) {  
   return (
     <>
       <Navbar navbar={navbar} />
@@ -20,13 +20,7 @@ export default function Home({ navbar, title, subtitle, ctaText, ctaLink, challe
       <Services services={services} /> 
       <Expertise title={expertiseTitle} knowledgeItems={knowledgeItems} />
       <Portfolio title={portfolioTitle} portfolioItems={portfolioItems} />
-      <Footer
-        logo={footerData.logo}         // Pass the footer data correctly
-        links={footerData.links}
-        overview={footerData.overview}
-        contact={footerData.contact}
-        socialMedia={footerData.socialMedia}
-      />
+      <Footer footer={footer}     />
     </>
   );
 }
@@ -59,9 +53,13 @@ export async function getStaticProps() {
   const footerFileContent = fs.readFileSync(footerFilePath, 'utf8');
   const { data: footerData } = matter(footerFileContent);
 
+  const navbarFilePath = path.join(process.cwd(), 'content', 'navbar.md');
+  const navbarFileContent = fs.readFileSync(navbarFilePath, 'utf8');
+  const { data: navbarData } = matter(navbarFileContent);
+
   return {
     props: {
-      navbar: homeData.navbar,
+      navbar: navbarData.navbar,
       title: homeData.title,
       subtitle: homeData.subtitle,
       ctaText: homeData.ctaText,
@@ -75,7 +73,8 @@ export async function getStaticProps() {
       knowledgeItems: expertiseData.knowledgeItems,
       portfolioTitle: portfolioData.title,
       portfolioItems: portfolioData.portfolioItems,
-      footerData,  // Pass the footer data here
+      footer:footerData.footer,
+      
     },
   };
 }
