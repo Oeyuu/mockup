@@ -8,9 +8,6 @@ public_folder: img
 collections:
   - name: "home"
     label: "Home"
-    create: true
-    slug: "{{slug}}"
-    extension: "md"
     files:
       - file: "content/home/index.md" # Eine einzige Datei, die alle Inhalte enthält
         label: "Home"
