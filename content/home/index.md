@@ -61,7 +61,7 @@ services:
     buttonLink: "xyz"
     image: "/img/home-blurred.png"
 # Expertise Section
-expertiseTitle: "Diese IT-Kenntnisse haben wir"
+expertiseTitle: "Diese IT-Kenntnisse bieten wir an"
 knowledgeItems:
   - title: "Frontend"
     icon: "/img/it-personal.png"
