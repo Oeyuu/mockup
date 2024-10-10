@@ -1,5 +1,5 @@
 ---
-title: Unsere Leistungend
+title: Unsere Leistungen
 services:
   - title: Strategisches IT Consulting
     description: Wir bieten strategische IT-Beratung, um sicherzustellen, dass Ihre
