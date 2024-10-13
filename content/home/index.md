@@ -24,7 +24,7 @@ ctaText: CHANGE YOUR PERSPECTIVE NOW!
 ctaLink: /contact
 challengesTitle: Liebe Führungskraft, stehst du vor entscheidenden IT-Herausforderungen?
 challenges:
-  - title: Die IT-Projekte dauern länger als geplantj
+  - title: Die IT-Projekte dauern länger als geplant
     description: Du hast schon mehrmals versucht, deine IT-Projekte im vorgesehenen
       Zeitrahmen abzuschließen. Doch immer wieder kommt es zu Verzögerungen –
       sei es durch unvorhergesehene technische Schwierigkeiten, fehlende
@@ -46,6 +46,9 @@ challenges:
       flexiblen Lösung, bei der du genau die Expertise erhältst, die du
       brauchst.
     icon: /img/puzzle.png
+  - title: testing new stuff
+    description: lorem ipsum wäre jetzt auch ganz gut
+    icon: img/background.jpeg
 portfolioTitle: Portfolio
 portfolioItems:
   - title: Marshle
