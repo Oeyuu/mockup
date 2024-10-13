@@ -67,25 +67,6 @@ services:
     buttonLink: /tests
     image: img/background.jpeg
 expertiseTitle: Diese IT-Kenntnisse bieten wir an
-knowledgeItems:
-  - title: Frontend
-    icon: /img/it-personal.png
-  - title: Backend
-    icon: /img/puzzle.png
-  - title: Fullstack
-    icon: /img/it-personal.png
-  - title: Datenbanken
-    icon: /img/puzzle.png
-  - title: Scripte
-    icon: /img/it-personal.png
-  - title: DevOps
-    icon: /img/puzzle.png
-  - title: Projektplanung
-    icon: /img/it-personal.png
-  - title: Security
-    icon: /img/puzzle.png
-  - title: yxcxyc
-    icon: img/background.jpeg
 portfolioTitle: Portfolio
 portfolioItems:
   - title: Marshle
