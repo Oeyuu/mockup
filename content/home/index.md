@@ -48,24 +48,6 @@ challenges:
   - title: testing new stuff
     description: lorem ipsum wäre jetzt auch ganz gut
     icon: img/background.jpeg
-servicesTitle: Unsere Servicessdv
-services:
-  - title: DevOps
-    description: Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam
-      nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-      diam voluptua.
-    buttonLink: xyz
-    image: /img/home-blurred.png
-  - title: Projektplanung
-    description: Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam
-      nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-      diam voluptua.
-    buttonLink: xyz
-    image: /img/home-blurred.png
-  - title: blqbla
-    description: blabdjgsdgj
-    buttonLink: /tests
-    image: img/background.jpeg
 expertiseTitle: Diese IT-Kenntnisse bieten wir an
 portfolioTitle: Portfolio
 portfolioItems:
