@@ -70,9 +70,6 @@ collections:
 
 
       # Services Section
-      - name: "servicesTitle"
-        label: "Services Section Title"
-        widget: "string"
       - name: "services"
         label: "Services"
         widget: "list"
