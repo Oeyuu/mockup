@@ -76,7 +76,7 @@ portfolioItems:
       nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
       diam voluptua.
     image: /img/home-blurred.png
-servicesTitle: Unsere Services
+servicesTitle: Unsere Servicessdv
 solutions:
   - title: Effiziente IT-Projektumsetzung
     description: Unsere IT-Beratung hilft Ihnen, Projekte pünktlich und effizient
@@ -128,4 +128,8 @@ services:
       diam voluptua.
     buttonLink: xyz
     image: /img/home-blurred.png
+  - title: blqbla
+    description: blabdjgsdgj
+    buttonLink: /tests
+    image: img/background.jpeg
 ---
