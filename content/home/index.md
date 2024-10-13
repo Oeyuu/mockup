@@ -1,22 +1,4 @@
 ---
-knowledgeItems:
-  - title: Frontend
-    icon: /img/it-personal.png
-  - title: Backend
-    icon: /img/puzzle.png
-  - title: Fullstack
-    icon: /img/it-personal.png
-  - title: Datenbanken
-    icon: /img/puzzle.png
-  - title: Scripte
-    icon: /img/it-personal.png
-  - title: DevOps
-    icon: /img/puzzle.png
-  - title: Projektplanung
-    icon: /img/it-personal.png
-  - title: Security
-    icon: /img/puzzle.png
-expertiseTitle: Diese IT-Kenntnisse bieten wir an
 title: Technology Lives For You
 subtitle: Neue Systeme und Prozesse erlernen ist kein muss - im Geschäft bleiben
   auch nicht
@@ -49,6 +31,44 @@ challenges:
   - title: testing new stuff
     description: lorem ipsum wäre jetzt auch ganz gut
     icon: img/background.jpeg
+servicesTitle: Unsere Servicessdv
+services:
+  - title: DevOps
+    description: Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam
+      nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+      diam voluptua.
+    buttonLink: xyz
+    image: /img/home-blurred.png
+  - title: Projektplanung
+    description: Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam
+      nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+      diam voluptua.
+    buttonLink: xyz
+    image: /img/home-blurred.png
+  - title: blqbla
+    description: blabdjgsdgj
+    buttonLink: /tests
+    image: img/background.jpeg
+expertiseTitle: Diese IT-Kenntnisse bieten wir an
+knowledgeItems:
+  - title: Frontend
+    icon: /img/it-personal.png
+  - title: Backend
+    icon: /img/puzzle.png
+  - title: Fullstack
+    icon: /img/it-personal.png
+  - title: Datenbanken
+    icon: /img/puzzle.png
+  - title: Scripte
+    icon: /img/it-personal.png
+  - title: DevOps
+    icon: /img/puzzle.png
+  - title: Projektplanung
+    icon: /img/it-personal.png
+  - title: Security
+    icon: /img/puzzle.png
+  - title: yxcxyc
+    icon: img/background.jpeg
 portfolioTitle: Portfolio
 portfolioItems:
   - title: Marshle
@@ -76,7 +96,9 @@ portfolioItems:
       nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
       diam voluptua.
     image: /img/home-blurred.png
-servicesTitle: Unsere Servicessdv
+  - title: xcyc
+    description: xycxycyx
+    image: img/brain-working.png
 solutions:
   - title: "Effiziente IT-Projektumsetzung"
     description: "Unsere IT-Beratung hilft Ihnen, Projekte pünktlich und effizient abzuschließen."
