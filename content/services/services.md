@@ -1,5 +1,7 @@
 ---
 title: Unsere Leistungen
+description: "Hier finden Sie eine Übersicht unserer umfassenden IT-Dienstleistungen."
+image: "/img/home-blurred.png"
 services:
   - title: Strategisches IT Consulting
     description: Wir bieten strategische IT-Beratung, um sicherzustellen, dass Ihre

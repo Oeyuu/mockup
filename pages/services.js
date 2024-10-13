@@ -4,12 +4,15 @@ import matter from 'gray-matter';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import ServicesSection from '../components/services/ServiceSection';
+import Title from '../components/services/Title';
 
-export default function ServicesPage({ navbar, footer, title, services }) {
+export default function ServicesPage({ navbar, footer, title, description, image, services }) {
   return (
     <>
       <Navbar navbar={navbar} />
-      <ServicesSection title={title} services={services} />
+      <Title title={title} description={description} image={image} />
+      <div className="divider"></div>
+      <ServicesSection services={services} />
       <Footer footer={footer} />
     </>
   );
@@ -33,6 +36,8 @@ export async function getStaticProps() {
       navbar: navbarData.navbar,
       footer: footerData.footer,
       title: servicesData.title,
+      description: servicesData.description,
+      image: servicesData.image,
       services: servicesData.services,
     },
   };

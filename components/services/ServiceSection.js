@@ -1,10 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
 
-const ServicesSection = ({ title, services }) => {
+const ServicesSection = ({ services }) => {
   return (
     <section className="services-section">
-      <h2>{title}</h2>
 
       {services.map((service, index) => (
         <div key={index} className={`service-item ${index % 2 !== 0 ? 'reverse' : ''}`}>

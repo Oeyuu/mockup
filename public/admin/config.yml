@@ -6,7 +6,7 @@ media_folder: public/img
 public_folder: img
 
 collections:
-  - name: "home"
+  - name: "index"
     label: "Home"
     extension: "md"
     create: true
@@ -131,9 +131,15 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - name: "title"
-        label: "Title"
+      - name: "pageTitle"
+        label: "Page Title"
         widget: "string"
+      - name: "pageDescription"
+        label: "Page Description"
+        widget: "text"
+      - name: "pageImage"
+        label: "Page Image"
+        widget: "image"
       - name: "services"
         label: "Services"
         widget: "list"
