@@ -1,5 +1,5 @@
 ---
-title: Technology Lives For Yout
+title: Technology Lives For You
 subtitle: Neue Systeme und Prozesse erlernen ist kein muss - im Geschäft bleiben
   auch nicht
 ctaText: CHANGE YOUR PERSPECTIVE NOW!
@@ -63,7 +63,6 @@ solutions:
       - point: Maßgeschneiderte IT-Konzepte
       - point: Optimierung der laufenden IT-Kosten
       - point: Langfristige Unterstützung und Betreuung
-servicesTitle: test
 services:
   - title: DevOps
     description: Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam
@@ -126,7 +125,5 @@ portfolioItems:
       nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
       diam voluptua.
     image: /img/home-blurred.png
-  - title: xcyc
-    description: xycxycyx
-    image: img/brain-working.png
+servicesTitle: test
 ---
