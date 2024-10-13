@@ -1,21 +1,4 @@
 ---
-knowledgeItems:
-  - title: Frontend
-    icon: /img/it-personal.png
-  - title: Backend
-    icon: /img/puzzle.png
-  - title: Fullstack
-    icon: /img/it-personal.png
-  - title: Datenbanken
-    icon: /img/puzzle.png
-  - title: Scripte
-    icon: /img/it-personal.png
-  - title: DevOps
-    icon: /img/puzzle.png
-  - title: Projektplanung
-    icon: /img/it-personal.png
-  - title: Security
-    icon: /img/puzzle.png
 title: Technology Lives For You
 subtitle: Neue Systeme und Prozesse erlernen ist kein muss - im Geschäft bleiben
   auch nicht
@@ -45,10 +28,69 @@ challenges:
       flexiblen Lösung, bei der du genau die Expertise erhältst, die du
       brauchst.
     icon: /img/puzzle.png
-  - title: testing new stuff
-    description: lorem ipsum wäre jetzt auch ganz gut
-    icon: img/background.jpeg
+solutionsTitle: Wir sind die Lösung zum Problem! Mit uns ist euer Erfolg sicher.
+solutions:
+  - title: Effiziente IT-Projektumsetzung
+    description: Unsere IT-Beratung hilft Ihnen, Projekte pünktlich und effizient
+      abzuschließen.
+    image: /img/home-blurred.png
+    points:
+      - point: Professionelle Planung und Durchführung
+      - point: Minimierung von Ressourcenengpässen
+      - point: Termingerechte Projektergebnisse
+  - title: Fachkräftemangel effizient überbrücken
+    description: Wir unterstützen Sie bei der Suche nach qualifizierten IT-Experten.
+    image: /img/it-personal.png
+    points:
+      - point: Breites Netzwerk von IT-Experten
+      - point: Schnelle Besetzung von Schlüsselpositionen
+      - point: Flexibilität durch projektbasierte Ressourcen
+  - title: Digitalisierung für Ihr Unternehmen
+    description: Unser Ziel ist es, Ihr Unternehmen sicher durch die Digitalisierung
+      zu führen.
+    image: /img/brain-working.png
+    points:
+      - point: Modernste Technologien für Ihr Unternehmen
+      - point: Effiziente Implementierung digitaler Lösungen
+      - point: Nachhaltige digitale Strategien
+  - title: Kosteneffiziente IT-Lösungen
+    description: Wir optimieren Ihre IT-Kosten.
+    image: /img/puzzle.png
+    points:
+      - point: Maßgeschneiderte IT-Konzepte
+      - point: Optimierung der laufenden IT-Kosten
+      - point: Langfristige Unterstützung und Betreuung
+services:
+  - title: DevOps
+    description: Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam
+      nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+      diam voluptua.
+    buttonLink: xyz
+    image: /img/home-blurred.png
+  - title: Projektplanung
+    description: Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam
+      nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+      diam voluptua.
+    buttonLink: xyz
+    image: /img/home-blurred.png
 expertiseTitle: Diese IT-Kenntnisse bieten wir an
+knowledgeItems:
+  - title: Frontend
+    icon: /img/it-personal.png
+  - title: Backend
+    icon: /img/puzzle.png
+  - title: Fullstack
+    icon: /img/it-personal.png
+  - title: Datenbanken
+    icon: /img/puzzle.png
+  - title: Scripte
+    icon: /img/it-personal.png
+  - title: DevOps
+    icon: /img/puzzle.png
+  - title: Projektplanung
+    icon: /img/it-personal.png
+  - title: Security
+    icon: /img/puzzle.png
 portfolioTitle: Portfolio
 portfolioItems:
   - title: Marshle
@@ -76,54 +118,4 @@ portfolioItems:
       nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
       diam voluptua.
     image: /img/home-blurred.png
-  - title: xcyc
-    description: xycxycyx
-    image: img/brain-working.png
-solutions:
-  - title: "Effiziente IT-Projektumsetzung"
-    description: "Unsere IT-Beratung hilft Ihnen, Projekte pünktlich und effizient abzuschließen."
-    image: "/img/home-blurred.png"
-    points:
-      - point: "Professionelle Planung und Durchführung"
-      - point: "Minimierung von Ressourcenengpässen"
-      - point: "Termingerechte Projektergebnisse"
-  - title: "Fachkräftemangel effizient überbrücken"
-    description: "Wir unterstützen Sie bei der Suche nach qualifizierten IT-Experten."
-    image: "/img/it-personal.png"
-    points:
-      - point: "Breites Netzwerk von IT-Experten"
-      - point: "Schnelle Besetzung von Schlüsselpositionen"
-      - point: "Flexibilität durch projektbasierte Ressourcen"
-  - title: "Digitalisierung für Ihr Unternehmen"
-    description: "Unser Ziel ist es, Ihr Unternehmen sicher durch die Digitalisierung zu führen."
-    image: "/img/brain-working.png"
-    points:
-      - point: "Modernste Technologien für Ihr Unternehmen"
-      - point: "Effiziente Implementierung digitaler Lösungen"
-      - point: "Nachhaltige digitale Strategien"
-  - title: "Kosteneffiziente IT-Lösungen"
-    description: "Wir optimieren Ihre IT-Kosten."
-    image: "/img/puzzle.png"
-    points:
-      - point: "Maßgeschneiderte IT-Konzepte"
-      - point: "Optimierung der laufenden IT-Kosten"
-      - point: "Langfristige Unterstützung und Betreuung"
-solutionsTitle: "Wir sind die Lösung zum Problem! Mit uns ist euer Erfolg sicher."
-services:
-  - title: DevOps
-    description: Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam
-      nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-      diam voluptua.
-    buttonLink: xyz
-    image: /img/home-blurred.png
-  - title: Projektplanung
-    description: Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam
-      nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-      diam voluptua.
-    buttonLink: xyz
-    image: /img/home-blurred.png
-  - title: blqbla
-    description: blabdjgsdgj
-    buttonLink: /tests
-    image: img/background.jpeg
 ---
