@@ -76,10 +76,6 @@ services:
       diam voluptua.
     buttonLink: xyz
     image: /img/home-blurred.png
-  - title: blqbla
-    description: blabdjgsdgj
-    buttonLink: /tests
-    image: img/background.jpeg
 expertiseTitle: Diese IT-Kenntnisse bieten wir an
 knowledgeItems:
   - title: Frontend
