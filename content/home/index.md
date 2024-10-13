@@ -17,11 +17,14 @@ knowledgeItems:
   - title: Security
     icon: /img/puzzle.png
 expertiseTitle: Diese IT-Kenntnisse bieten wir an
-challengesTitle: Liebe Führungskraft, stehst du vor entscheidenden IT-Herausforderungen?
-title: Technology Lives For Youtest
+title: Technology Lives For You
+subtitle: Neue Systeme und Prozesse erlernen ist kein muss - im Geschäft bleiben
+  auch nicht
+ctaText: CHANGE YOUR PERSPECTIVE NOW!
 ctaLink: /contact
+challengesTitle: Liebe Führungskraft, stehst du vor entscheidenden IT-Herausforderungen?
 challenges:
-  - title: Die IT-Projekte dauern länger als geplant
+  - title: Die IT-Projekte dauern länger als geplantj
     description: Du hast schon mehrmals versucht, deine IT-Projekte im vorgesehenen
       Zeitrahmen abzuschließen. Doch immer wieder kommt es zu Verzögerungen –
       sei es durch unvorhergesehene technische Schwierigkeiten, fehlende
@@ -44,8 +47,6 @@ challenges:
       brauchst.
     icon: /img/puzzle.png
 portfolioTitle: Portfolio
-subtitle: Neue Systeme und Prozesse erlernen ist kein muss - im Geschäft bleiben
-  auch nicht
 portfolioItems:
   - title: Marshle
     description: Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam
@@ -110,7 +111,6 @@ solutions:
       - Maßgeschneiderte IT-Konzepte
       - Optimierung der laufenden IT-Kosten
       - Langfristige Unterstützung und Betreuung
-ctaText: CHANGE YOUR PERSPECTIVE NOW!
 solutionsTitle: Wir sind die Lösung zum Problem! Mit uns ist euer Erfolg sicher.
 services:
   - title: DevOps
