@@ -6,68 +6,30 @@ media_folder: public/img
 public_folder: img
 
 collections:
-  - name: "home"
+  - name: "index"
     label: "Home"
     folder: "content/home"
-    create: true
+    extension: "md"
     fields:
-      - label: "Title"
-        name: "title"
+      - name: "title"
+        label: "Title"
         widget: "string"
-      - label: "Subtitle"
-        name: "subtitle"
+      - name: "subtitle"
+        label: "Subtitle"
         widget: "string"
-      - label: "CTA Text"
-        name: "ctaText"
+      - name: "ctaText"
+        label: "CTA Text"
         widget: "string"
-      - label: "CTA Link"
-        name: "ctaLink"
+      - name: "ctaLink"
+        label: "CTA Link"
         widget: "string"
-      - label: "Navbar"
-        name: "navbar"
-        widget: "object"
-        fields:
-          - label: "Links"
-            name: "links"
-            widget: "list"
-            fields:
-              - label: "Name"
-                name: "name"
-                widget: "string"
-              - label: "Href"
-                name: "href"
-                widget: "string"
-              - label: "Dropdown"
-                name: "dropdown"
-                widget: "list"
-                fields:
-                  - label: "Name"
-                    name: "name"
-                    widget: "string"
-                  - label: "Href"
-                    name: "href"
-                    widget: "string"
-          - label: "Contact Button"
-            name: "contactButton"
-            widget: "object"
-            fields:
-              - label: "Label"
-                name: "label"
-                widget: "string"
-              - label: "Href"
-                name: "href"
-                widget: "string"
 
-  - name: "challenges"
-    label: "Challenges Section"
-    folder: "content/home"
-    create: true
-    fields:
-      - label: "Title"
-        name: "title"
+      # Challenges Section
+      - name: "challengesTitle"
+        label: "Challenges Section Title"
         widget: "string"
-      - label: "Challenges"
-        name: "challenges"
+      - name: "challenges"
+        label: "Challenges Section"
         widget: "list"
         fields:
           - label: "Challenge Title"
@@ -80,16 +42,13 @@ collections:
             name: "icon"
             widget: "image"
 
-  - name: "solution"
-    label: "Solution Section"
-    folder: "content/home"
-    create: true
-    fields:
-      - label: "Title"
-        name: "title"
+      
+      # Solutions Section
+      - name: "solutionsTitle"
+        label: "Solutions Section Title"
         widget: "string"
-      - label: "Solutions"
-        name: "solutions"
+      - name: "solutions"
+        label: "Solutions Section"
         widget: "list"
         fields:
           - label: "Solution Title"
@@ -101,14 +60,21 @@ collections:
           - label: "Image"
             name: "image"
             widget: "image"
+          - label: "Points"
+            name: "points"
+            widget: "list"
+            fields:
+              - label: "Point"
+                name: "point"
+                widget: "string"
 
-  - name: "services"
-    label: "Services"
-    folder: "content/home"
-    create: true
-    fields:
-      - label: "Services"
-        name: "services"
+
+      # Services Section
+      - name: "servicesTitle"
+        label: "Services Section Title"
+        widget: "string"
+      - name: "services"
+        label: "Services"
         widget: "list"
         fields:
           - label: "Service Title"
@@ -124,16 +90,12 @@ collections:
             name: "image"
             widget: "image"
 
-  - name: "expertise"
-    label: "Expertise"
-    folder: "content/home"
-    create: true
-    fields:
-      - label: "Title"
-        name: "title"
+      # Expertise Section
+      - name: "expertiseTitle"
+        label: "Expertise Section Title"
         widget: "string"
-      - label: "Knowledge Items"
-        name: "knowledgeItems"
+      - name: "knowledgeItems"
+        label: "Expertise Section (Knowledge Items)"
         widget: "list"
         fields:
           - label: "Item Title"
@@ -143,16 +105,12 @@ collections:
             name: "icon"
             widget: "image"
 
-  - name: "portfolio"
-    label: "Portfolio"
-    folder: "content/home"
-    create: true
-    fields:
-      - label: "Title"
-        name: "title"
+      # Portfolio Section
+      - name: "portfolioTitle"
+        label: "Portfolio Section Title"
         widget: "string"
-      - label: "Portfolio Items"
-        name: "portfolioItems"
+      - name: "portfolioItems"
+        label: "Portfolio"
         widget: "list"
         fields:
           - label: "Project Title"
@@ -165,54 +123,38 @@ collections:
             name: "image"
             widget: "image"
 
-  - name: "footer"
-    label: "Footer"
-    folder: "content"
+
+
+
+
+  - name: "services"
+    label: "Services"
+    folder: "content/services"
     create: true
+    slug: "{{slug}}"
     fields:
-      - label: "Logo"
-        name: "logo"
+      - name: "title"
+        label: "Title"
+        widget: "string"
+      - name: "description"
+        label: "Description"
+        widget: "text"
+      - name: "image"
+        label: "Page Image"
         widget: "image"
-      - label: "Links"
-        name: "links"
-        widget: "object"
-        fields:
-          - label: "Impressum"
-            name: "impressum"
-            widget: "string"
-          - label: "Datenschutz"
-            name: "datenschutz"
-            widget: "string"
-      - label: "Overview"
-        name: "overview"
+      - name: "services"
+        label: "Services"
         widget: "list"
         fields:
-          - label: "Name"
-            name: "name"
+          - label: "Service Title"
+            name: "title"
             widget: "string"
-          - label: "Link"
-            name: "link"
+          - label: "Description"
+            name: "description"
+            widget: "text"
+          - label: "Button Link"
+            name: "buttonLink"
             widget: "string"
-      - label: "Contact"
-        name: "contact"
-        widget: "list"
-        fields:
-          - label: "Type"
-            name: "type"
-            widget: "string"
-          - label: "Label"
-            name: "label"
-            widget: "string"
-          - label: "Link"
-            name: "link"
-            widget: "string"
-      - label: "Social Media"
-        name: "socialMedia"
-        widget: "list"
-        fields:
-          - label: "Platform"
-            name: "platform"
-            widget: "string"
-          - label: "Link"
-            name: "link"
-            widget: "string"
+          - label: "Image"
+            name: "image"
+            widget: "image"

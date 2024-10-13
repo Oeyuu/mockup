@@ -1,0 +1,114 @@
+/* Styling für den Titelbereich */
+.title-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 33vh; /* 1/3 der Höhe des Viewports */
+    padding: 50px 0;
+    background-color: #F0FAFC; /* Hintergrundfarbe für den Titelbereich */
+    position: relative; /* Ermöglicht das Einfügen des Dividers */
+  }
+  
+  .title-content {
+    flex: 0 0 60%; /* Nimmt 60% der Breite ein */
+    padding-right: 20px;
+    text-align: left; /* Text linksbündig */
+  }
+  
+  .title-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .title-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+  }
+  
+  .title-image-wrapper {
+    flex: 0 0 40%; /* Nimmt 40% der Breite ein */
+    height: 100%; /* Das Bild erstreckt sich über die gesamte Höhe */
+    position: relative;
+  }
+  
+  .title-image {
+    object-fit: cover; /* Bild passt sich proportional an */
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Divider zwischen Title und Section */
+  .divider {
+    width: 100%;
+    height: 2px;
+    background-color: #B0C4DE; /* Divider-Farbe */
+    margin: 0 auto;
+  }
+  
+  /* Styling für den Servicebereich */
+  .services-section {
+    padding: 50px 0;
+  }
+  
+  .services-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+  }
+  
+  .service-item {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 60px;
+  }
+  
+  .service-item.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .service-content {
+    flex: 1;
+    padding: 20px;
+    text-align: center; /* Zentriert den gesamten Textinhalt */
+  }
+  
+  .service-content h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .service-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .service-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2a5f79;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 auto; /* Button wird mittig ausgerichtet */
+  }
+  
+  .service-button:hover {
+    background-color: #72a7e1; /* Farbe für den Hover-Effekt */
+  }
+  
+  .service-image-wrapper {
+    flex: 1;
+    position: relative;
+    min-width: 300px;
+    height: auto; /* Die Höhe wird durch den Text bestimmt */
+  }
+  
+  .service-image {
+    object-fit: cover; /* Das Bild füllt den gesamten Platz proportional aus */
+    width: 100%;
+    height: 100%;
+  }
+  
