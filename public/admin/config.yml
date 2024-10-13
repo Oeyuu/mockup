@@ -24,23 +24,23 @@ collections:
         label: "CTA Link"
         widget: "string"
 
-      # # Challenges Section
-      # - name: "challengesTitle"
-      #   label: "Challenges Section Title"
-      #   widget: "string"
-      # - name: "challenges"
-      #   label: "Challenges Section"
-      #   widget: "list"
-      #   fields:
-      #     - label: "Challenge Title"
-      #       name: "title"
-      #       widget: "string"
-      #     - label: "Description"
-      #       name: "description"
-      #       widget: "text"
-      #     - label: "Icon"
-      #       name: "icon"
-      #       widget: "image"
+      # Challenges Section
+      - name: "challengesTitle"
+        label: "Challenges Section Title"
+        widget: "string"
+      - name: "challenges"
+        label: "Challenges Section"
+        widget: "list"
+        fields:
+          - label: "Challenge Title"
+            name: "title"
+            widget: "string"
+          - label: "Description"
+            name: "description"
+            widget: "text"
+          - label: "Icon"
+            name: "icon"
+            widget: "image"
 
       # # Solutions Section
       # - name: "solutionsTitle"
