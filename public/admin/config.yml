@@ -42,6 +42,7 @@ collections:
             name: "icon"
             widget: "image"
 
+      
       # Solutions Section
       - name: "solutionsTitle"
         label: "Solutions Section Title"
