@@ -1,7 +1,7 @@
 ---
 title: Unsere Leistungen
 description: Hier finden Sie eine Übersicht unserer umfassenden IT-Dienstleistungen.
-image: /img/home-blurred.png
+image: img/background.jpeg
 pageTitle: test
 pageDescription: test2
 pageImage: img/background.jpeg
