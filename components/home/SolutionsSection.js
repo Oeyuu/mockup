@@ -19,8 +19,8 @@ const SolutionSection = ({ title, solutions }) => {
             <h3>{solution.title}</h3>
             <p>{solution.description}</p>
             <ul>
-              {solution.points.map((point, i) => (
-                <li key={i}>{point}</li>
+              {solution.points.map((pointObj, i) => (
+                <li key={i}>{pointObj.point}</li> 
               ))}
             </ul>
           </div>
