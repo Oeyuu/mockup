@@ -1,0 +1,36 @@
+.aboutUs {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    text-align: center;
+  }
+  
+  .highlightsContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  
+  .highlight {
+    flex: 1 1 calc(33.333% - 1rem);
+    max-width: 300px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .highlightDescription {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+  }
+  
