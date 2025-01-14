@@ -1,7 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import styles from './AboutUsDetails.module.css';
-
 const AboutUsDetails = ({ highlights }) => {
   return (
     <section className={styles.aboutUs}>
