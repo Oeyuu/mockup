@@ -157,19 +157,29 @@ collections:
             widget: "image"
   
 
-  - name: "aboutus"
-    label: "About Us"
-    folder: "content/aboutus"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - name: "title"
-        label: "Title"
-        widget: "string"
-      - name: "description"
-        label: "Description"
-        widget: "text"
-      - name: "image"
-        label: "Page Image"
-        widget: "image"
+- name: "aboutus"
+  label: "About Us"
+  folder: "content/aboutus"
+  create: true
+  slug: "{{slug}}"
+  fields:
+    - name: "title"
+      label: "Title"
+      widget: "string"
+    - name: "description"
+      label: "Description"
+      widget: "text"
+    - name: "image"
+      label: "Page Image"
+      widget: "image"
+    - name: "highlights"
+      label: "Highlights"
+      widget: "list"
+      fields:
+        - name: "description"
+          label: "Description"
+          widget: "text"
+        - name: "image"
+          label: "Image"
+          widget: "image"
 
