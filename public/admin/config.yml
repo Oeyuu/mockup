@@ -155,3 +155,21 @@ collections:
           - label: "Image"
             name: "image"
             widget: "image"
+  
+
+  - name: "aboutus"
+    label: "About Us"
+    folder: "content/aboutus"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - name: "title"
+        label: "Title"
+        widget: "string"
+      - name: "description"
+        label: "Description"
+        widget: "text"
+      - name: "image"
+        label: "Page Image"
+        widget: "image"
+
