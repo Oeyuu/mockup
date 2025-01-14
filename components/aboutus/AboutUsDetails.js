@@ -1,19 +1,20 @@
 import React from 'react';
 import Image from 'next/image';
+
 const AboutUsDetails = ({ highlights }) => {
   return (
-    <section className={styles.aboutUs}>
-      <div className={styles.highlightsContainer}>
+    <section className="about-us">
+      <div className="highlights-container">
         {highlights.map((highlight, index) => (
-          <div key={index} className={styles.highlight}>
+          <div key={index} className="highlight">
             <Image
               src={highlight.image}
               alt={`Highlight ${index + 1}`}
               width={200}
               height={200}
-              className={styles.image}
+              className="highlight-image"
             />
-            <p className={styles.highlightDescription}>{highlight.description}</p>
+            <p className="highlight-description">{highlight.description}</p>
           </div>
         ))}
       </div>
