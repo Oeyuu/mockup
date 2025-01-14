@@ -4,7 +4,7 @@ import matter from 'gray-matter';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Title from '../components/Title';
-import AboutUsDetails from '../components/AboutUsDetails';
+import AboutUsDetails from '../components/aboutus/AboutUsDetails';
 
 export default function AboutUsPage({ navbar, footer, title, description, image, highlights }) {
   return (
