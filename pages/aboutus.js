@@ -3,23 +3,21 @@ import path from 'path';
 import matter from 'gray-matter';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import ServicesSection from '../components/services/ServiceSection';
 import Title from '../components/Title';
 
-export default function ServicesPage({ navbar, footer, title, description, image, services }) {
+export default function AboutUsPage({ navbar, footer, title, description, image }) {
   return (
     <>
       <Navbar navbar={navbar} />
       <Title title={title} description={description} image={image} />
       <div className="divider"></div>
-      <ServicesSection services={services} />
       <Footer footer={footer} />
     </>
   );
 }
 
 export async function getStaticProps() {
-  const servicesFilePath = path.join(process.cwd(), 'content', 'services', 'services.md');
+  const servicesFilePath = path.join(process.cwd(), 'content', 'aboutus', 'aboutus.md');
   const servicesFileContent = fs.readFileSync(servicesFilePath, 'utf8');
   const { data: servicesData } = matter(servicesFileContent);
 
@@ -38,7 +36,6 @@ export async function getStaticProps() {
       title: servicesData.title,
       description: servicesData.description,
       image: servicesData.image,
-      services: servicesData.services,
     },
   };
 }
