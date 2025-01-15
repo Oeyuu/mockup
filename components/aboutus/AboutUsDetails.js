@@ -4,24 +4,8 @@ import Image from 'next/image';
 const AboutUsDetails = ({ highlightDescription, highlights }) => {
   return (
     <section className="about-us">
-      {/* Highlight-Beschreibung */}
       <p className="highlight-description">{highlightDescription}</p>
 
-      {/* Highlights
-       - name: "highlight-description"
-        label: "Highlight Description"
-        widget: "text"
-      - name: "highlights"
-        label: "Highlights"
-        widget: "list"
-        fields:
-          - name: "image"
-            label: "Image"
-            widget: "image"
-          - name: "image-description"
-            label: "Image Description"
-            widget: "text"
- */}
       <div className="highlights-grid">
         {highlights.map((highlight, index) => (
           <div key={index} className="highlight">

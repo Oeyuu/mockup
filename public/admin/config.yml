@@ -156,7 +156,6 @@ collections:
             name: "image"
             widget: "image"
   
-  
   - name: "aboutus"
     label: "About Us"
     folder: "content/aboutus"
@@ -185,3 +184,21 @@ collections:
           - name: "image-description"
             label: "Image Description"
             widget: "text"
+      - name: "facts"
+        label: "Facts and Figures"
+        widget: "list"
+        fields:
+          - name: "icon"
+            label: "Icon"
+            widget: "select"
+            options:
+              - building
+              - calendar
+              - check-circle
+          - name: "title"
+            label: "Fact Title"
+            widget: "string"
+          - name: "description"
+            label: "Description"
+            widget: "string"
+

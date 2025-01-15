@@ -9,7 +9,7 @@ import '../styles/home/Expertise.css';
 import '../styles/home/Portfolio.css';
 import '../styles/services/Services.css';
 import '../styles/aboutus/AboutUsDetails.css';
-
+import '../styles/aboutus/FactsAndFigures.css';
 
 
 function MyApp({ Component, pageProps }) {

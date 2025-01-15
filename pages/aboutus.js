@@ -5,13 +5,15 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Title from '../components/Title';
 import AboutUsDetails from '../components/aboutus/AboutUsDetails';
+import FactsAndFigures from '../components/aboutus/FactsAndFigures';
 
-export default function AboutUsPage({ navbar, footer, title, description, image, highlightDescription, highlights }) {
+export default function AboutUsPage({ navbar, footer, title, description, image, highlightDescription, highlights, facts }) {
   return (
     <>
       <Navbar navbar={navbar} />
       <Title title={title} description={description} image={image} />
       <AboutUsDetails highlightDescription={highlightDescription} highlights={highlights} />
+      <FactsAndFigures facts={facts} /> 
       <div className="divider"></div>
       <Footer footer={footer} />
     </>
@@ -41,8 +43,9 @@ export async function getStaticProps() {
       title: aboutUsData.title,
       description: aboutUsData.description,
       image: aboutUsData.image,
-      highlightDescription: aboutUsData['highlight-description'], // highlight-description extrahieren
+      highlightDescription: aboutUsData['highlight-description'],
       highlights: aboutUsData.highlights,
+      facts: aboutUsData.facts, // Facts hinzufügen
     },
   };
 }
