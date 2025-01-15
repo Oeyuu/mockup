@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
+import styles from '../../styles/home/Expertise.module.css'; 
 
 const Expertise = ({ title, knowledgeItems }) => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -13,40 +14,40 @@ const Expertise = ({ title, knowledgeItems }) => {
   };
 
   return (
-    <section className="knowledge-section">
+    <section className={styles['knowledge-section']}>
       <h2>{title}</h2>
-      <div className="knowledge-grid">
+      <div className={styles['knowledge-grid']}>
         {knowledgeItems.map((item, index) => (
-          <div key={index} className="knowledge-card">
+          <div key={index} className={styles['knowledge-card']}>
             <Image
               src={item.icon}
               alt={`${item.title} icon`}
               width={50}
               height={50}
-              className="knowledge-icon"
+              className={styles['knowledge-icon']}
             />
             <h3>{item.title}</h3>
-            <a href="#expertise" className="knowledge-link">→</a>
+            <a href="#expertise" className={styles['knowledge-link']}>→</a>
           </div>
         ))}
       </div>
 
-      <p className="search-hint">
+      <p className={styles['search-hint']}>
         Suchst du nach einer bestimmten Programmiersprache oder einer Technologie? Du kannst hier nachschauen, ob wir diese Expertise mitbringen.
       </p>
-      <form className="search-bar" onSubmit={handleSearch}>
+      <form className={styles['search-bar']} onSubmit={handleSearch}>
         <input
           type="text"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           placeholder="Technologie suchen..."
-          className="search-input"
+          className={styles['search-input']}
         />
-        <button type="submit" className="search-button">→</button>
+        <button type="submit" className={styles['search-button']}>→</button>
       </form>
 
       {searchedTerm && (
-        <div className="search-results">
+        <div className={styles['search-results']}>
           <h3>Ergebnisse für: "{searchedTerm}"</h3>
         </div>
       )}

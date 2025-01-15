@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FaCity, FaCalendarAlt, FaCheckCircle } from 'react-icons/fa';
+import styles from '../../styles/aboutus/FactsAndFigures.module.css'; 
 
 const FactsAndFigures = ({ facts }) => {
   const icons = {
@@ -27,19 +28,19 @@ const FactsAndFigures = ({ facts }) => {
   }, [facts]);
 
   return (
-    <section className="facts-and-figures">
-      <div className="facts-container">
+    <section className={styles['facts-and-figures']}>
+      <div className={styles['facts-container']}>
         {facts.map((fact, index) => (
-          <div key={index} className="fact">
-            <div className="icon">{icons[fact.icon]}</div>
-            <h3 className="fact-title">{fact.title}</h3>
+          <div key={index} className={styles.fact}>
+            <div className={styles.icon}>{icons[fact.icon]}</div>
+            <h3 className={styles['fact-title']}>{fact.title}</h3>
             {fact.value ? (
-              <p className="fact-value">
+              <p className={styles['fact-value']}>
                 {Math.min(currentValues[index], fact.value).toFixed(0)}
                 {fact.suffix}
               </p>
             ) : (
-              <p className="fact-description">{fact.description}</p>
+              <p className={styles['fact-description']}>{fact.description}</p>
             )}
           </div>
         ))}
