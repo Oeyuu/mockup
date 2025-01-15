@@ -6,12 +6,12 @@ import Footer from '../components/Footer';
 import Title from '../components/Title';
 import AboutUsDetails from '../components/aboutus/AboutUsDetails';
 
-export default function AboutUsPage({ navbar, footer, title, description, image, highlights }) {
+export default function AboutUsPage({ navbar, footer, title, description, image, highlightDescription, highlights }) {
   return (
     <>
       <Navbar navbar={navbar} />
       <Title title={title} description={description} image={image} />
-      <AboutUsDetails highlights={highlights} /> 
+      <AboutUsDetails highlightDescription={highlightDescription} highlights={highlights} />
       <div className="divider"></div>
       <Footer footer={footer} />
     </>
@@ -41,6 +41,7 @@ export async function getStaticProps() {
       title: aboutUsData.title,
       description: aboutUsData.description,
       image: aboutUsData.image,
+      highlightDescription: aboutUsData['highlight-description'], // highlight-description extrahieren
       highlights: aboutUsData.highlights,
     },
   };

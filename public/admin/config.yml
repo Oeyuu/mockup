@@ -156,9 +156,9 @@ collections:
             name: "image"
             widget: "image"
   
-
+  
   - name: "aboutus"
-    label: "AboutUs"
+    label: "About Us"
     folder: "content/aboutus"
     create: true
     slug: "{{slug}}"
@@ -172,17 +172,16 @@ collections:
       - name: "image"
         label: "Page Image"
         widget: "image"
+      - name: "highlight-description"
+        label: "Highlight Description"
+        widget: "text"
       - name: "highlights"
         label: "Highlights"
         widget: "list"
         fields:
-          - name: "description"
-            label: "Highlights Description"
-            widget: "text"
           - name: "image"
             label: "Image"
             widget: "image"
           - name: "image-description"
             label: "Image Description"
             widget: "text"
-

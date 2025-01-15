@@ -2,8 +2,8 @@
 title: "Über Uns"
 description: "Wir sind ein junges IT-Dienstleistungsunternehmen, das sich darauf konzentriert, die technologische Landschaft unserer Kunden zu optimieren und zu transformieren."
 image: "img/background.jpeg"
+highlight-description: "Wir sind ein junges IT-Dienstleistungsunternehmen, das sich darauf konzentriert, die technologische Landschaft unserer Kunden zu optimieren und zu transformieren."
 highlights:
-  - description: "Wir sind ein junges IT-Dienstleistungsunternehmen, das sich darauf konzentriert, die technologische Landschaft unserer Kunden zu optimieren und zu transformieren."
   - image: "/img/background.jpeg"
     image-description: "Wir setzen auf nachhaltige Lösungen und helfen Unternehmen, ihre Effizienz zu steigern."
   - image: "/img/background.jpeg"
