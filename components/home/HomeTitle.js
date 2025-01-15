@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../../styles/home/HomeTitle.module.css';
 
-const Title = ({ title, subtitle, ctaText, ctaLink }) => {
+const HomeTitle = ({ title, subtitle, ctaText, ctaLink }) => {
   return (
     <section className={styles['hero-section']}>
       <h1 className={styles['hero-title']}>{title}</h1>
@@ -13,4 +13,4 @@ const Title = ({ title, subtitle, ctaText, ctaLink }) => {
   );
 };
 
-export default Title;
+export default HomeTitle;

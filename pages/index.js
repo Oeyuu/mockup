@@ -3,7 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import Title from '../components/home/Title';
+import HomeTitle from '../components/home/HomeTitle';
 import ChallengesSection from '../components/home/ChallengesSection';
 import SolutionSection from '../components/home/SolutionsSection';
 import Services from '../components/home/Services';
@@ -14,7 +14,7 @@ export default function Home({ navbar, footer, title, subtitle, ctaText, ctaLink
   return (
     <>
       <Navbar navbar={navbar} />
-      <Title title={title} subtitle={subtitle} ctaText={ctaText} ctaLink={ctaLink} />
+      <HomeTitle title={title} subtitle={subtitle} ctaText={ctaText} ctaLink={ctaLink} />
       <ChallengesSection title={challengesTitle} challenges={challenges} />
       <SolutionSection title={solutionsTitle} solutions={solutions} />
       <Services title={servicesTitle} services={services} /> 
