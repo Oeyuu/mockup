@@ -24,20 +24,19 @@
   padding: 1rem;
 }
 
-/* Bild im Highlight */
+
 .highlight-image-container {
-  flex: 0 0 auto; /* Bild nimmt nur den benötigten Platz ein */
+  flex: 0 0 auto; 
 }
 
 .highlight-image {
-  border-radius: 50%; /* Rundes Bild */
+  border-radius: 50%; 
   margin-bottom: 1rem;
-  object-fit: cover; /* Bild füllt den runden Rahmen */
+  object-fit: cover; 
 }
 
-/* Beschreibung im Highlight */
 .highlight-description-container {
-  flex: 1; /* Text füllt den restlichen Platz */
+  flex: 1; 
 }
 
 .highlight-description {
