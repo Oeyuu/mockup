@@ -4,18 +4,29 @@ import Image from 'next/image';
 const AboutUsDetails = ({ highlights }) => {
   return (
     <section className="about-us">
-      <div className="highlights-container">
-        {highlights.map((highlight, index) => (
+      
+      <p className="about-us-description">{highlights[0]?.description}</p>
+
+    
+      <div className="highlights-grid">
+        {highlights.slice(1).map((highlight, index) => (
           <div key={index} className="highlight">
+          {/* Bild */}
+          <div className="highlight-image-container">
             <Image
               src={highlight.image}
               alt={`Highlight ${index + 1}`}
-              width={200}
-              height={200}
+              width={100}
+              height={100}
               className="highlight-image"
             />
-            <p className="highlight-description">{highlight.description}</p>
           </div>
+          {/* Text */}
+          <div className="highlight-description-container">
+            <p className="highlight-description">{highlight['image-description']}</p>
+          </div>
+        </div>
+        
         ))}
       </div>
     </section>

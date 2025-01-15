@@ -1,36 +1,63 @@
 .about-us {
-    padding: 2rem;
-    background-color: #f9f9f9;
-    border-radius: 15px;
-    text-align: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+}
+
+.about-us-description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #333;
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 2rem; 
+}
+
+.highlight {
+  display: flex;
+  align-items: center; 
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* Bild im Highlight */
+.highlight-image-container {
+  flex: 0 0 auto; /* Bild nimmt nur den benötigten Platz ein */
+}
+
+.highlight-image {
+  border-radius: 50%; /* Rundes Bild */
+  margin-bottom: 1rem;
+  object-fit: cover; /* Bild füllt den runden Rahmen */
+}
+
+/* Beschreibung im Highlight */
+.highlight-description-container {
+  flex: 1; /* Text füllt den restlichen Platz */
+}
+
+.highlight-description {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+}
+
+/* Mobile Darstellung */
+@media (max-width: 768px) {
+  .highlights-grid {
+    grid-template-columns: 1fr; /* Nur eine Spalte */
   }
-  
-  .highlights-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-  }
-  
+
   .highlight {
-    flex: 1 1 calc(33.333% - 1rem);
-    max-width: 300px;
-    text-align: center;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-direction: column; /* Bild und Text untereinander */
+    align-items: center; /* Zentriere Inhalte */
   }
-  
-  .highlight-image {
-    border-radius: 50%;
+
+  .highlight-image-container {
     margin-bottom: 1rem;
   }
-  
-  .highlight-description {
-    font-size: 1rem;
-    color: #666;
-    margin: 0;
-  }
-  
+}
