@@ -13,12 +13,12 @@ const FactsAndFigures = ({ facts }) => {
   useEffect(() => {
     const intervals = facts.map((fact, index) => {
       if (fact.value) {
-        const increment = fact.value / 100; // Geschwindigkeit der Animation
+        const increment = fact.value / 100;
         return setInterval(() => {
           setCurrentValues((prev) =>
             prev.map((val, i) => (i === index && val < fact.value ? val + increment : val))
           );
-        }, 20); // Zeitintervall
+        }, 20);
       }
       return null;
     });

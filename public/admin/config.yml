@@ -192,7 +192,7 @@ collections:
             label: "Icon"
             widget: "select"
             options:
-              - building
+              - city
               - calendar
               - check-circle
           - name: "title"
