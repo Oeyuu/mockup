@@ -5,10 +5,11 @@ import Image from 'next/image';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import styles from '../../styles/home/Services.module.css';
 
 const Services = ({ services }) => {
   return (
-    <section className="single-item-section">
+    <section className={styles['single-item-section']}>
       <Swiper
         modules={[Navigation, Pagination]}
         spaceBetween={50}
@@ -19,7 +20,7 @@ const Services = ({ services }) => {
       >
         {services.map((service, index) => (
           <SwiperSlide key={index}>
-            <div className="single-item-slide">
+            <div className={styles['single-item-slide']}>
               <Image
                 src={service.image}
                 alt={service.title}
@@ -27,10 +28,10 @@ const Services = ({ services }) => {
                 objectFit="cover"
                 quality={100}
               />
-              <h1 className="single-item-title">{service.title}</h1>
-              <p className="single-item-description">{service.description}</p>
+              <h1 className={styles['single-item-title']}>{service.title}</h1>
+              <p className={styles['single-item-description']}>{service.description}</p>
               <a href={service.buttonLink}>
-                <button className="single-item-button">Mehr erfahren &gt;</button>
+                <button className={styles['single-item-button']}>Mehr erfahren &gt;</button>
               </a>
             </div>
           </SwiperSlide>

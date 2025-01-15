@@ -1,12 +1,13 @@
 import React from 'react';
+import styles from '../../styles/home/HomeTitle.module.css';
 
 const Title = ({ title, subtitle, ctaText, ctaLink }) => {
   return (
-    <section className="hero-section">
-      <h1 className="hero-title">{title}</h1>
-      <p className="hero-subtitle">{subtitle}</p>
+    <section className={styles['hero-section']}>
+      <h1 className={styles['hero-title']}>{title}</h1>
+      <p className={styles['hero-subtitle']}>{subtitle}</p>
       <a href={ctaLink}>
-        <button className="cta-button">{ctaText}</button>
+        <button className={styles['cta-button']}>{ctaText}</button>
       </a>
     </section>
   );

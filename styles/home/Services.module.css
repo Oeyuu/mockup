@@ -1,0 +1,65 @@
+.single-item-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0 50px;
+}
+
+.single-item-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  border-radius: 25px;
+  padding: 50px; 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+  position: relative;
+}
+
+.single-item-title {
+  font-size: 5rem;
+  color: white;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.single-item-description {
+  font-size: 1.8rem;
+  color: white;
+  margin-bottom: 40px;
+  max-width: 800px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.single-item-button {
+  background-color: white;
+  color: #357A98;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 2;
+}
+
+.single-item-button:hover {
+  background-color: #2a5f79;
+  color: white;
+}
+
+.swiper-pagination-bullet {
+  background: #000000;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000000;
+}
