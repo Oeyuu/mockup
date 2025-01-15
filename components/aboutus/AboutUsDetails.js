@@ -7,7 +7,21 @@ const AboutUsDetails = ({ highlightDescription, highlights }) => {
       {/* Highlight-Beschreibung */}
       <p className="highlight-description">{highlightDescription}</p>
 
-      {/* Highlights */}
+      {/* Highlights
+       - name: "highlight-description"
+        label: "Highlight Description"
+        widget: "text"
+      - name: "highlights"
+        label: "Highlights"
+        widget: "list"
+        fields:
+          - name: "image"
+            label: "Image"
+            widget: "image"
+          - name: "image-description"
+            label: "Image Description"
+            widget: "text"
+ */}
       <div className="highlights-grid">
         {highlights.map((highlight, index) => (
           <div key={index} className="highlight">
