@@ -1,0 +1,73 @@
+.management-section {
+    padding: 50px 0;
+    background-color: #f0fafc;
+    text-align: center;
+  }
+  
+  .management-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #357a98;
+  }
+  
+  .management-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .management-card {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .management-image {
+    flex: 0 0 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 20px;
+  }
+  
+  .management-content {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .management-content h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .management-email a {
+    color: #357a98;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .management-email a:hover {
+    text-decoration: underline;
+  }
+  
+  .management-position {
+    font-size: 1rem;
+    color: #666;
+    margin: 10px 0;
+  }
+  
+  .management-links a {
+    margin-right: 10px;
+    color: #357a98;
+    transition: color 0.3s ease;
+  }
+  
+  .management-links a:hover {
+    color: #2a5f79;
+  }
+  

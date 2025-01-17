@@ -6,14 +6,8 @@ description: Wir sind ein junges IT-Dienstleistungsunternehmen, das sich darauf
 image: img/background.jpeg
 highlight-description: Wir sind ein junges IT-Dienstleistungsunternehmen, das
   sich darauf konzentriert, die technologische Landschaft unserer Kunden zu
-  optimieren und zu transformieren.Wir sind ein junges
-  IT-Dienstleistungsunternehmen, das sich darauf konzentriert, die
-  technologische Landschaft unserer Kunden zu optimieren und zu
-  transformieren.Wir sind ein junges IT-Dienstleistungsunternehmen, das sich
-  darauf konzentriert, die technologische Landschaft unserer Kunden zu
-  optimieren und zu transformieren.Wir sind ein junges
-  IT-Dienstleistungsunternehmen, das sich darauf konzentriert, die
-  technologische Landschaft unserer Kunden zu optimieren und zu transformieren.
+  optimieren und zu transformieren. Wir setzen auf nachhaltige Lösungen und
+  kundenorientierte IT-Lösungen.
 highlights:
   - image: /img/background.jpeg
     image-description: Wir setzen auf nachhaltige Lösungen und helfen Unternehmen,
@@ -39,7 +33,22 @@ facts:
   - icon: check-circle
     title: Abgeschlossene Projekte
     description: "60"
-  - icon: city
-    title: Nebensitz
-    description: Ludwigshafen
+values:
+  title: Unsere Werte
+  graphic: /img/background.jpeg
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
+    Praesent libero. Sed cursus ante dapibus diam.
+management:
+  - name: Akram Osman
+    email: akram.osman@teclify.com
+    position: Geschäftsführung
+    image: /img/background.jpeg
+    xing: https://www.xing.com/profile/Akram_Osman
+    linkedin: https://www.linkedin.com/in/akram-osman
+  - name: Sem Zerezghi
+    email: sem.zerezghi@teclify.com
+    position: Geschäftsführung
+    image: /img/background.jpeg
+    xing: https://www.xing.com/profile/Sem_Zerezghi
+    linkedin: https://www.linkedin.com/in/sem-zerezghi
 ---
