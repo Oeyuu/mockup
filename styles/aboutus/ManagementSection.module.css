@@ -1,73 +1,78 @@
 .management-section {
-    padding: 50px 0;
-    background-color: #f0fafc;
+    padding: 50px;
     text-align: center;
-  }
+}
   
-  .management-section h2 {
-    font-size: 2rem;
-    margin-bottom: 40px;
-    color: #357a98;
-  }
-  
-  .management-grid {
+.management-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    justify-content: center;
-    align-items: flex-start;
-  }
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 40px;
+    padding: 70px;
+    justify-items: center;
+    align-items: stretch;
+}
   
-  .management-card {
+.management-card {
+    display: flex;
+    flex-direction: row; 
+    gap: 15px;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    max-width: 500px;
+}
+  
+.management-image {
+    flex-shrink: 0; 
+}
+  
+.management-content {
+    flex-grow: 1;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+  
+.management-content h3 {
+    margin: 0 0 5px;
+    font-size: 1.2rem;
+    color: #333;
+}
+  
+.management-email a {
+    color: #357A98;
+    text-decoration: none;
+    word-break: break-word; 
+}
+  
+.management-email a:hover {
+    text-decoration: underline;
+}
+  
+.management-position {
+    font-size: 1rem;
+    color: #555;
+}
+  
+.management-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px; 
+}
+  
+.management-links a {
+    color: #357A98;
     display: flex;
     align-items: center;
-    background: white;
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
+    justify-content: center;
+}
   
-  .management-image {
-    flex: 0 0 150px;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-right: 20px;
-  }
-  
-  .management-content {
-    flex: 1;
-    text-align: left;
-  }
-  
-  .management-content h3 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 5px;
-  }
-  
-  .management-email a {
-    color: #357a98;
-    text-decoration: none;
-    font-size: 1rem;
-  }
-  
-  .management-email a:hover {
-    text-decoration: underline;
-  }
-  
-  .management-position {
-    font-size: 1rem;
-    color: #666;
-    margin: 10px 0;
-  }
-  
-  .management-links a {
-    margin-right: 10px;
-    color: #357a98;
-    transition: color 0.3s ease;
-  }
-  
-  .management-links a:hover {
+.management-links a:hover {
     color: #2a5f79;
-  }
-  
+}
+

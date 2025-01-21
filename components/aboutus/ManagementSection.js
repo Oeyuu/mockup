@@ -28,12 +28,12 @@ const ManagementSection = ({ title, management }) => {
               <div className={styles['management-links']}>
                 {member.xing && (
                   <a href={member.xing} target="_blank" rel="noopener noreferrer">
-                    <FaXing size={20} />
+                    <FaXing size={50} />
                   </a>
                 )}
                 {member.linkedin && (
                   <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
-                    <FaLinkedin size={20} />
+                    <FaLinkedin size={50} />
                   </a>
                 )}
               </div>

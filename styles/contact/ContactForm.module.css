@@ -1,0 +1,87 @@
+/* Container */
+.form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 500px; /* Maximale Breite des Formulars */
+    margin: 0 auto; /* Zentrierung */
+    padding: 30px 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Moderner Schatten */
+  }
+  
+  /* Titel */
+  .title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #357a98;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Eingabefelder */
+  .input, .textarea {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 1rem;
+    background-color: #f9f9f9; /* Leichter Hintergrund für Felder */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover- und Fokus-Effekte für Felder */
+  .input:focus, .textarea:focus {
+    border-color: #357a98;
+    box-shadow: 0 0 8px rgba(53, 122, 152, 0.2);
+    outline: none;
+  }
+  
+  .textarea {
+    height: 120px; /* Größere Höhe für Textbereiche */
+    resize: none; /* Verhindert Größenänderung */
+  }
+  
+  /* Button */
+  .button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #357a98;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .button:hover {
+    background-color: #285f79;
+    transform: translateY(-2px); /* Leichter "Hover-Lift" */
+  }
+  
+  .button:active {
+    background-color: #1f495e;
+    transform: translateY(0); /* Zurück bei Klick */
+  }
+  
+  /* Mobile Optimierung */
+  @media (max-width: 768px) {
+    .form {
+      padding: 20px;
+    }
+  
+    .title {
+      font-size: 1.5rem;
+    }
+  
+    .button {
+      width: 100%; /* Button über die gesamte Breite */
+      text-align: center;
+    }
+  }
+  
