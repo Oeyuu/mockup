@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 import Title from '../components/Title';
 import ContactCard from '../components/contact/ContactCard';
 import Impressum from '../components/impressum/Impressum';
-import styles from '../styles/contact/ContactCard.module.css';
+import styles from '../styles/impressum/Impressum.module.css';
 
 export default function impressumPage({ navbar, footer, title, description, image,contactInfo, impressum
  }) {
@@ -15,7 +15,7 @@ export default function impressumPage({ navbar, footer, title, description, imag
     <>
       <Navbar navbar={navbar} />
       <Title title={title} description={description} image={image} />
-      <div className={styles.contactContainer}>
+      <div className={styles.impressumContainer}>
         <ContactCard contactInfo={contactInfo} />
         <Impressum {...impressum} />
       </div>

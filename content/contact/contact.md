@@ -5,8 +5,10 @@ image: "/img/background.jpeg"
 contactForm:
   formTitle: "Kontaktieren Sie uns"
   emailPlaceholder: "Ihre E-Mail-Adresse"
+  phonePlaceholder: "Ihre Telefonnummer" 
   messagePlaceholder: "Ihre Nachricht"
   buttonText: "Absenden"
+  senderEmail: "info@teclify.com" 
 contactInfo:
   title: "Kontakt Informationen"
   infoList:

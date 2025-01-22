@@ -79,6 +79,7 @@
     max-width: 500px; /* Maximale Breite für jede Komponente */
   }
 
+
   .page {
     display: flex;
     gap: 30px;
