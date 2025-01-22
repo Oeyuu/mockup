@@ -1,0 +1,40 @@
+.impressum {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .impressum .title {
+    font-size: 1.8rem;
+    color: #357a98;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .impressum .subheader {
+    font-size: 1.4rem;
+    color: #285f79;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .impressum p {
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+  
+  .impressum .subtext {
+    color: #666;
+    font-style: italic;
+    margin-top: 10px;
+  }
+  
+  .impressum .info p {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  

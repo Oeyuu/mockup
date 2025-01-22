@@ -230,72 +230,153 @@ collections:
 
 
 
-- name: "contact"
-  label: "Kontakt"
-  folder: "content/contact"
-  create: true
-  slug: "{{slug}}"
-  fields:
-    - name: "title"
-      label: "Title"
-      widget: "string"
-    - name: "description"
-      label: "Description"
-      widget: "text"
-    - name: "image"
-      label: "Header Image"
-      widget: "image"
-    - name: "contactForm"
-      label: "Contact Form"
-      widget: "object"
-      fields:
-        - name: "formTitle"
-          label: "Form Title"
-          widget: "string"
-        - name: "emailPlaceholder"
-          label: "Email Placeholder"
-          widget: "string"
-        - name: "messagePlaceholder"
-          label: "Message Placeholder"
-          widget: "string"
-        - name: "buttonText"
-          label: "Button Text"
-          widget: "string"
-    - name: "contactInfo"
-      label: "Contact Info"
-      widget: "object"
-      fields:
-        - name: "title"
-          label: "Section Title"
-          widget: "string"
-        - name: "infoList"
-          label: "Info List"
-          widget: "list"
-          fields:
-            - name: "icon"
-              label: "Icon"
-              widget: "select"
-              options:
-                - phone
-                - envelope
-                - location
-            - name: "text"
-              label: "Text"
-              widget: "string"
-        - name: "socialLinks"
-          label: "Social Links"
-          widget: "list"
-          fields:
-            - name: "icon"
-              label: "Icon"
-              widget: "select"
-              options:
-                - youtube
-                - linkedin
-                - xing
-                - instagram
-            - name: "href"
-              label: "URL"
-              widget: "string"
+  - name: "contact"
+    label: "Kontakt"
+    folder: "content/contact"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - name: "title"
+        label: "Title"
+        widget: "string"
+      - name: "description"
+        label: "Description"
+        widget: "text"
+      - name: "image"
+        label: "Header Image"
+        widget: "image"
+      - name: "contactForm"
+        label: "Contact Form"
+        widget: "object"
+        fields:
+          - name: "formTitle"
+            label: "Form Title"
+            widget: "string"
+          - name: "emailPlaceholder"
+            label: "Email Placeholder"
+            widget: "string"
+          - name: "messagePlaceholder"
+            label: "Message Placeholder"
+            widget: "string"
+          - name: "buttonText"
+            label: "Button Text"
+            widget: "string"
+      - name: "contactInfo"
+        label: "Contact Info"
+        widget: "object"
+        fields:
+          - name: "title"
+            label: "Section Title"
+            widget: "string"
+          - name: "infoList"
+            label: "Info List"
+            widget: "list"
+            fields:
+              - name: "icon"
+                label: "Icon"
+                widget: "select"
+                options:
+                  - phone
+                  - envelope
+                  - location
+              - name: "text"
+                label: "Text"
+                widget: "string"
+          - name: "socialLinks"
+            label: "Social Links"
+            widget: "list"
+            fields:
+              - name: "icon"
+                label: "Icon"
+                widget: "select"
+                options:
+                  - youtube
+                  - linkedin
+                  - xing
+                  - instagram
+              - name: "href"
+                label: "URL"
+                widget: "string"
 
 
+
+  - name: "impressum"
+    label: "Impressum"
+    folder: "content/impressum"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - name: "title"
+        label: "Title"
+        widget: "string"
+      - name: "description"
+        label: "Description"
+        widget: "text"
+      - name: "image"
+        label: "Header Image"
+        widget: "image"
+      - name: "contactInfo"
+        label: "Contact Info"
+        widget: "object"
+        fields:
+          - name: "title"
+            label: "Section Title"
+            widget: "string"
+          - name: "infoList"
+            label: "Info List"
+            widget: "list"
+            fields:
+              - name: "icon"
+                label: "Icon"
+                widget: "select"
+                options:
+                  - phone
+                  - envelope
+                  - location
+              - name: "text"
+                label: "Text"
+                widget: "string"
+          - name: "socialLinks"
+            label: "Social Links"
+            widget: "list"
+            fields:
+              - name: "icon"
+                label: "Icon"
+                widget: "select"
+                options:
+                  - youtube
+                  - linkedin
+                  - xing
+                  - instagram
+              - name: "href"
+                label: "URL"
+                widget: "string"
+      - name: "impressum"
+        label: "Impressum Details"
+        widget: "object"
+        fields:
+          - name: "headertext"
+            label: "Header Text"
+            widget: "string"
+          - name: "subheader"
+            label: "Subheader"
+            widget: "string"
+          - name: "text"
+            label: "Main Text"
+            widget: "text"
+          - name: "subtext"
+            label: "Subtext"
+            widget: "text"
+          - name: "registration"
+            label: "Registration"
+            widget: "object"
+            fields:
+              - name: "court"
+                label: "Court"
+                widget: "string"
+              - name: "number"
+                label: "Number"
+                widget: "string"
+          - name: "vatId"
+            label: "VAT ID"
+            widget: "string"

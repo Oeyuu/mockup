@@ -78,6 +78,15 @@
     flex: 1; /* Gleiche Breite für beide Komponenten */
     max-width: 500px; /* Maximale Breite für jede Komponente */
   }
+
+  .page {
+    display: flex;
+    gap: 30px;
+    padding: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
   
   @media (max-width: 768px) {
     .contactContainer {
