@@ -21,7 +21,7 @@ const ContactForm = ({ contactForm }) => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           ...formData,
-          senderEmail: contactForm.senderEmail,
+          receiverEmail: contactForm.receiverEmail, // Empfänger aus Markdown
         }),
       });
       if (response.ok) {

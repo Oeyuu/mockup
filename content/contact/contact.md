@@ -8,7 +8,7 @@ contactForm:
   phonePlaceholder: "Ihre Telefonnummer" 
   messagePlaceholder: "Ihre Nachricht"
   buttonText: "Absenden"
-  senderEmail: "info@teclify.com" 
+  receiverEmail: "yu.can.oez@gmail.com" 
 contactInfo:
   title: "Kontakt Informationen"
   infoList:
