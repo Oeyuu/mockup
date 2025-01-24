@@ -121,6 +121,101 @@ collections:
             widget: "image"
 
 
+ 
+  - name: "navbar"
+    label: "Navbar"
+    folder: "content/navbar"
+    extension: "md"
+    create: true
+    fields:
+      - name: "links"
+        label: "Links"
+        widget: "list"
+        fields:
+          - name: "name"
+            label: "Name"
+            widget: "string"
+          - name: "href"
+            label: "Link"
+            widget: "string"
+          - name: "dropdown"
+            label: "Dropdown"
+            widget: "list"
+            required: false
+            fields:
+              - name: "name"
+                label: "Name"
+                widget: "string"
+              - name: "href"
+                label: "Link"
+                widget: "string"
+      - name: "contactButton"
+        label: "Kontakt Button"
+        widget: "object"
+        fields:
+          - name: "label"
+            label: "Label"
+            widget: "string"
+          - name: "href"
+            label: "Link"
+            widget: "string"
+
+
+
+  - name: "footer"
+    label: "Footer"
+    folder: "content/footer"
+    extension: "md"
+    create: true
+    fields:
+      - name: "logo"
+        label: "Logo"
+        widget: "image"
+      - name: "links"
+        label: "Links"
+        widget: "object"
+        fields:
+          - name: "impressum"
+            label: "Impressum"
+            widget: "string"
+          - name: "datenschutz"
+            label: "Datenschutz"
+            widget: "string"
+      - name: "overview"
+        label: "Overview"
+        widget: "list"
+        fields:
+          - name: "name"
+            label: "Name"
+            widget: "string"
+          - name: "link"
+            label: "Link"
+            widget: "string"
+      - name: "contact"
+        label: "Contact"
+        widget: "list"
+        fields:
+          - name: "type"
+            label: "Type"
+            widget: "string"
+          - name: "label"
+            label: "Label"
+            widget: "string"
+          - name: "link"
+            label: "Link"
+            widget: "string"
+      - name: "socialMedia"
+        label: "Social Media"
+        widget: "list"
+        fields:
+          - name: "platform"
+            label: "Platform"
+            widget: "string"
+          - name: "link"
+            label: "Link"
+            widget: "string"
+
+
 
 
 
