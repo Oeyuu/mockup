@@ -13,32 +13,23 @@ const ContactForm = ({ contactForm }) => {
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    try {
-      const response = await fetch('/api/send-email', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          ...formData,
-          receiverEmail: contactForm.receiverEmail, // Empfänger aus Markdown
-        }),
-      });
-      if (response.ok) {
-        alert('Ihre Nachricht wurde erfolgreich gesendet!');
-        setFormData({ email: '', phone: '', message: '' });
-      } else {
-        alert('Fehler beim Senden der Nachricht.');
-      }
-    } catch (error) {
-      console.error('Fehler:', error);
-      alert('Es gab ein Problem beim Senden der Nachricht.');
-    }
   };
 
   return (
-    <form className={styles.form} onSubmit={handleSubmit}>
+    <form
+      className={styles.form}
+      name="contact" // Name des Formulars (wichtig für Netlify)
+      method="POST" // POST-Methode, damit Netlify die Daten verarbeiten kann
+      data-netlify="true" // Aktiviert Netlify Forms
+      onSubmit={handleSubmit} // Eigene Logik für Submit
+    >
+      {/* Verstecktes Feld für Netlify */}
+      <input type="hidden" name="form-name" value="contact" />
+
       <div className={styles.title}>{contactForm.formTitle}</div>
+
       <input
         type="email"
         name="email"
