@@ -13,19 +13,13 @@ const ContactForm = ({ contactForm }) => {
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
-
   return (
     <form
       className={styles.form}
-      name="contact" // Name des Formulars (wichtig für Netlify)
-      method="POST" // POST-Methode, damit Netlify die Daten verarbeiten kann
-      data-netlify="true" // Aktiviert Netlify Forms
-      onSubmit={handleSubmit} // Eigene Logik für Submit
+      name="contact"
+      method="POST" 
+      data-netlify="true" 
     >
-      {/* Verstecktes Feld für Netlify */}
       <input type="hidden" name="form-name" value="contact" />
 
       <div className={styles.title}>{contactForm.formTitle}</div>
