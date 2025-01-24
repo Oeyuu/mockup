@@ -124,7 +124,7 @@ collections:
  
   - name: "navbar"
     label: "Navbar"
-    folder: "content/navbar"
+    file: "content/navbar"
     extension: "md"
     create: true
     slug: "{{slug}}"
@@ -165,7 +165,7 @@ collections:
 
   - name: "footer"
     label: "Footer"
-    folder: "content/footer"
+    file: "content/footer"
     extension: "md"
     slug: "{{slug}}"
     create: true
