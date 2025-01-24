@@ -124,9 +124,10 @@ collections:
  
   - name: "navbar"
     label: "Navbar"
-    folder: "content/"
+    folder: "content/navbar"
     extension: "md"
     create: true
+    slug: "{{slug}}"
     fields:
       - name: "links"
         label: "Links"
@@ -164,8 +165,9 @@ collections:
 
   - name: "footer"
     label: "Footer"
-    folder: "content/"
+    folder: "content/footer"
     extension: "md"
+    slug: "{{slug}}"
     create: true
     fields:
       - name: "logo"
