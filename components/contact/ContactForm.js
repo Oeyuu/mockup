@@ -21,6 +21,7 @@ const ContactForm = ({ contactForm }) => {
       data-netlify="true" 
     >
       <input type="hidden" name="form-name" value="contact" />
+      <input type="hidden" name="subject" value="Kontaktanfrage" />
 
       <div className={styles.title}>{contactForm.formTitle}</div>
 
