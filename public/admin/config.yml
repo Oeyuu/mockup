@@ -124,7 +124,7 @@ collections:
  
   - name: "navbar"
     label: "Navbar"
-    folder: "content/navbar"
+    folder: "content/"
     extension: "md"
     create: true
     fields:
@@ -164,7 +164,7 @@ collections:
 
   - name: "footer"
     label: "Footer"
-    folder: "content/footer"
+    folder: "content/"
     extension: "md"
     create: true
     fields:
