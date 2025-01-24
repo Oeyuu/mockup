@@ -6,6 +6,8 @@
   background-color: #E5F6FB;
   height: 100px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative; 
+  z-index: 1000; 
 }
 
 .logo img {
@@ -22,6 +24,7 @@
 
 .navbar-links li {
   display: inline;
+  position: relative;
 }
 
 .navbar-links a {
@@ -49,6 +52,9 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 10px;
   border-radius: 5px;
+  z-index: 999; /* Stellt sicher, dass Dropdowns vor anderen Inhalten erscheinen */
+  top: 100%; /* Positioniert das Dropdown unter dem Eltern-Element */
+  left: 0;
 }
 
 .navbar-links li:hover ul.dropdown {
@@ -86,6 +92,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   margin-top: 10px;
+  z-index: 999;
 }
 
 .navbar-links li ul.dropdown li {
