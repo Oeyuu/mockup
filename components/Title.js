@@ -9,7 +9,7 @@ const TitleSection = ({ title, description, image }) => {
         <p>{description}</p>
       </div>
       <div className="title-image">
-        <Image src={image} alt={title} layout="responsive" width={600} height={400} />
+        <Image src={image} alt={title} layout="responsive" width={600} height={300} />
       </div>
     </section>
   );

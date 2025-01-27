@@ -3,6 +3,16 @@
     max-width: 500px;
     margin: 0 auto;
   }
+
+  .impressum .header {
+    font-size: 2rem;
+    color: #285f79;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+  
   
   .impressum .title {
     font-size: 1.8rem;

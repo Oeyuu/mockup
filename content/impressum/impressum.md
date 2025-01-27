@@ -22,6 +22,7 @@ contactInfo:
     - icon: youtube
       href: " https://www.youtube.com"
 impressum:
+  header: "Haftungshinweis (Disclaimer)"
   content:
     - subheader: Haftung für Inhalte
       text: Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf

@@ -6,7 +6,7 @@ footer:
     datenschutz: "/datenschutz"
   overview:
     - name: "About Us"
-      link: "/about"
+      link: "/aboutus"
     - name: "Leistungen"
       link: "/services"
     - name: "Portfolio"

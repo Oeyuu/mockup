@@ -460,6 +460,9 @@ collections:
         label: "Impressum Details"
         widget: "object"
         fields:
+          - name: "header"
+            label: "Header"
+            widget: "string"
           - name: "content"
             label: "Content Blocks"
             widget: "list"
@@ -483,3 +486,30 @@ collections:
           - name: "vatId"
             label: "VAT ID"
             widget: "string"
+
+
+  - name: "dataprivacy"
+    label: "Datenschutz"
+    folder: "content/dataprivacy"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - name: "title"
+        label: "Title"
+        widget: "string"
+      - name: "description"
+        label: "Description"
+        widget: "text"
+      - name: "image"
+        label: "Header Image"
+        widget: "image"
+      - name: "dataprivacy"  # Direkte Liste ohne content-Unterfeld
+        label: "Datenschutz Abschnitte"
+        widget: "list"
+        fields:
+          - name: "subheader"
+            label: "Überschrift"
+            widget: "string"
+          - name: "text"
+            label: "Text"
+            widget: "text"
