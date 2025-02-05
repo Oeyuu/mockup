@@ -1,0 +1,89 @@
+.section {
+    display: grid;
+    grid-template-columns: 50% 45%;
+    gap: 5%;
+    padding: 4rem;
+    background-color: #357A98;
+    box-sizing: border-box;
+    min-height: auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.6;
+}
+
+.header {
+    color: white;
+    font-weight: lighter;
+}
+
+.text {
+    color: white;
+    font-weight: normal;
+}
+
+.button {
+    height: 50px;
+    margin: 5px;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    border: solid #f9f9f9 2px;
+    font-size: 16px;
+    color: rgb(245, 245, 245);
+    transition: 500ms;
+    border-radius: 10px;
+    background: transparent;
+}
+
+.button:hover {
+    box-shadow: 1px 1px 13px #cfcfcf, -1px -1px 13px #bbbbbb;
+    color: #d6d6d6;
+}
+
+.management {
+    display: grid; /* Aktiviert das Grid-Layout für .management */
+    grid-template-columns: 1fr 1fr; /* Zwei gleich breite Spalten */
+    gap: 20px; /* Abstand zwischen den beiden Spalten */
+    align-items: center; /* Vertikale Zentrierung der Elemente */
+    text-align: left;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.management .image {
+    grid-column: 1; /* Setzt das Bild in die erste Spalte */
+    justify-self: start; /* Bild nach links ausrichten */
+    overflow: hidden; /* Verhindert, dass das Bild über den Container hinausgeht */
+    position: relative; /* Positionierung für das Bild */
+    width: 100%; /* Stellt sicher, dass der Container die volle Breite hat */
+    height: 100%; 
+}
+
+.management .name,
+.management .email,
+.management .phone {
+    grid-column: 2; /* Setzt diese Elemente in die zweite Spalte */
+    justify-self: start; /* Text nach rechts ausrichten */
+}
+
+.management .name {
+    margin-bottom: 10px; /* Optional: Abstand zwischen den einzelnen Textelementen */
+}
+
+.management .email {
+    margin-bottom: 10px;
+}
+
+.management .phone {
+    margin-bottom: 10px;
+}
