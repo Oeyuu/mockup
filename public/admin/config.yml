@@ -513,11 +513,13 @@ collections:
           - name: "text"
             label: "Text"
             widget: "text"
-   
+  
+
   - name: "service"
     label: "Service"
     folder: "content/service"
     slug: "{{slug}}"
+    create: true
     fields:
       - name: "title"
         label: "Title"
@@ -560,7 +562,7 @@ collections:
             widget: "text"
           - name: "button"
             label: "Button"
-            widget: "text"
+            widget: "string"
           - name: "management"
             label: "Management"
             widget: "list"
@@ -581,12 +583,12 @@ collections:
         label: "Kategorie"
         widget: "list"
         fields:
-        - name: "name"
-          label: "Name"
-          widget: "string"
-        - name: "class"
-          label: "Klasse"
-          widget: "string"
+          - name: "name"
+            label: "Name"
+            widget: "string"
+          - name: "class"
+            label: "Klasse"
+            widget: "string"
       - name: "tools"
         label: "Tools"
         widget: "list"
@@ -600,3 +602,8 @@ collections:
           - name: "class"
             label: "Klasse"
             widget: "list"
+            field:
+              - label: "Class"
+                name: "class"
+                widget: "string"
+
