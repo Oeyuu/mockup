@@ -16,6 +16,7 @@ export default function ServiceDetailPage({
   description,
   image,
   service,
+  category,
   tools,
   help
 }) {
@@ -26,8 +27,8 @@ export default function ServiceDetailPage({
       <Navbar navbar={navbar} />
       <Title title={title} description={description} image={image} />
       <Service service={service} />
-      <Tools tools={tools}/>
-      <HelpBox help = {help}/>
+      <Tools category={category} tools={tools} />
+      <HelpBox help={help} />
       <Footer footer={footer} />
     </>
   );
@@ -100,6 +101,7 @@ export async function getStaticProps({ params }) {
         description: serviceData.description || '',
         image: serviceData.image || '',
         service,
+        category: serviceData.category,
         tools: serviceData.tools,
         help: serviceData.help,
       },

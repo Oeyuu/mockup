@@ -47,14 +47,15 @@ services:
           Unser Ziel ist es, Ihre Prozesse zu optimieren und Ihr Unternehmen für zukünftige Herausforderungen bestmöglich aufzustellen.
 
 help:
-  - header: "Haben Sie noch Fragen?"
-    text: "Falls Sie mehr zu diesem Thema erfahren möchten, freue ich mich über Ihre Kontaktaufnahme."
-    button: "/contact"
-    management:
-      - name: "Akram Osman"
-        email: "akram.osman@teclify.com"
-        position: "Projektmanager"
-        image: /img/background.jpeg
+  header: "Haben Sie noch Fragen?"
+  text: "Falls Sie mehr zu diesem Thema erfahren möchten, freue ich mich über Ihre Kontaktaufnahme."
+  button: "/contact"
+  management:
+    name: "Akram Osman"
+    email: "akram.osman@teclify.com"
+    phone: "+23 1518231359"
+    position: "Projektmanager"
+    image: /img/background.jpeg
 
 category:
   - name: "Alle"
@@ -88,6 +89,7 @@ tools:
     image: /img/background.jpeg
     class: 
       - "all"
+      - "cloud"
   - name: "Python"
     image: /img/background.jpeg
     class: 
