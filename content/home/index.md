@@ -73,24 +73,6 @@ services:
       diam voluptua.
     buttonLink: xyz
     image: /img/home-blurred.png
-expertiseTitle: Diese IT-Kenntnisse bieten wir an
-knowledgeItems:
-  - title: Frontend
-    icon: /img/it-personal.png
-  - title: Backend
-    icon: /img/puzzle.png
-  - title: Fullstack
-    icon: /img/it-personal.png
-  - title: Datenbanken
-    icon: /img/puzzle.png
-  - title: Scripte
-    icon: /img/it-personal.png
-  - title: DevOps
-    icon: /img/puzzle.png
-  - title: Projektplanung
-    icon: /img/it-personal.png
-  - title: Security
-    icon: /img/puzzle.png
 portfolioTitle: Portfolio
 portfolioItems:
   - title: Marshle
@@ -118,4 +100,53 @@ portfolioItems:
       nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
       diam voluptua.
     image: /img/home-blurred.png
+category:
+  - name: "Alle"
+    class: "all"
+  - name: "Programmiersprachen"
+    class: "languages"
+  - name: "Cloud Plattformen"
+    class: "cloud"
+  - name: "Technologien"
+    class: "technology"
+  - name: "DevOps"
+    class: "devops"
+  - name: "Methoden"
+    class: "methods"
+  - name: "Datenbanken"
+    class: "database"
+
+tools:
+  - name: "Java"
+    image: /img/background.jpeg
+    class: 
+      - "all"
+      - "languages"
+  - name: "Python"
+    image: /img/background.jpeg
+    class: 
+      - "all"
+      - "cloud"
+      - "devops"
+  - name: "Python"
+    image: /img/background.jpeg
+    class: 
+      - "all"
+      - "cloud"
+  - name: "Python"
+    image: /img/background.jpeg
+    class: 
+      - "all"
+  - name: "Python"
+    image: /img/background.jpeg
+    class: 
+      - "all"
+  - name: "Python"
+    image: /img/background.jpeg
+    class: 
+      - "all"
+  - name: "Python"
+    image: /img/background.jpeg
+    class: 
+      - "all"
 ---

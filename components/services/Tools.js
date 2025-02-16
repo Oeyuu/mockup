@@ -4,7 +4,7 @@ import styles from '../../styles/services/Tools.module.css';
 const Tools = ({ category, tools }) => {
     const [activeCategory, setActiveCategory] = useState("all");
 
-    // Funktion zum Filtern der Tools
+
     const filteredTools = activeCategory === "all" 
         ? tools 
         : tools.filter(tool => tool.class.includes(activeCategory));

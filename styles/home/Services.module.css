@@ -4,6 +4,7 @@
   justify-content: center;
   position: relative;
   padding: 0 50px;
+  margin-bottom: 50px;
 }
 
 .single-item-slide {
@@ -15,9 +16,13 @@
   background-size: cover;
   background-position: center;
   border-radius: 25px;
-  padding: 50px; 
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+  padding: 50px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   position: relative;
+}
+
+.single-item-slide img {
+  border-radius: 20px;
 }
 
 .single-item-title {

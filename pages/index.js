@@ -6,11 +6,11 @@ import Footer from '../components/Footer';
 import HomeTitle from '../components/home/HomeTitle';
 import ChallengesSection from '../components/home/ChallengesSection';
 import SolutionSection from '../components/home/SolutionsSection';
+import Tools from '../components/services/Tools';
 import Services from '../components/home/Services';
-import Expertise from '../components/home/Expertise';
 import Portfolio from '../components/home/Portfolio';
 
-export default function Home({ navbar, footer, title, subtitle, ctaText, ctaLink, challengesTitle, challenges, solutionsTitle, solutions, servicesTitle, services, expertiseTitle, knowledgeItems, portfolioTitle, portfolioItems }) {
+export default function Home({ navbar, footer, title, subtitle, ctaText, ctaLink, challengesTitle, challenges, solutionsTitle, solutions, servicesTitle, services, portfolioTitle, portfolioItems, category,tools }) {
   return (
     <>
       <Navbar navbar={navbar} />
@@ -18,7 +18,7 @@ export default function Home({ navbar, footer, title, subtitle, ctaText, ctaLink
       <ChallengesSection title={challengesTitle} challenges={challenges} />
       <SolutionSection title={solutionsTitle} solutions={solutions} />
       <Services title={servicesTitle} services={services} /> 
-      <Expertise title={expertiseTitle} knowledgeItems={knowledgeItems} />
+      <Tools category={category} tools={tools} />
       <Portfolio title={portfolioTitle} portfolioItems={portfolioItems} />
       <Footer footer={footer} />
     </>
@@ -51,10 +51,10 @@ export async function getStaticProps() {
       solutions: homeData.solutions || [],
       servicesTitle: homeData.servicesTitle || "Services",
       services: homeData.services || [],
-      expertiseTitle: homeData.expertiseTitle || "Expertise",
-      knowledgeItems: homeData.knowledgeItems || [],
       portfolioTitle: homeData.portfolioTitle || "Portfolio",
       portfolioItems: homeData.portfolioItems || [],
+      category: homeData.category,
+      tools: homeData.tools,
     },
   };
 }
