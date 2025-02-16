@@ -4,6 +4,7 @@ subtitle: Neue Systeme und Prozesse erlernen ist kein muss - im Geschäft bleibe
   auch nicht
 ctaText: CHANGE YOUR PERSPECTIVE NOW!
 ctaLink: /contact
+backgroundImage: "/img/home-blurred.png"
 challengesTitle: Liebe Führungskraft, stehst du vor entscheidenden IT-Herausforderungen?
 challenges:
   - title: Die IT-Projekte dauern länger als geplant

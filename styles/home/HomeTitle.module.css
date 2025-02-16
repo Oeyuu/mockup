@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-.hero-section {
-  padding: 50px 0;
+.hero_section {
   height: 100dvh;
-  background-image: url('/img/home-blurred.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -11,7 +9,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden; 
+  overflow: hidden;
+  padding: 20px;
+  box-sizing: border-box; 
 }
 
 @keyframes fadeInBackground {
@@ -40,7 +40,7 @@
 
 .hero-title {
   font-family: 'Poppins', sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem; 
   color: #fff;
   margin-bottom: 1rem;
   font-weight: bold;
@@ -63,13 +63,13 @@
 
 .hero-subtitle {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem; 
   color: #fff;
   margin-bottom: 2rem;
   text-align: center;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-  opacity: 0; 
-  animation: slideInSubtitle 1s ease-in-out 2.5s forwards; 
+  opacity: 0;
+  animation: slideInSubtitle 1s ease-in-out 2.5s forwards;
 }
 
 @keyframes fadeInButton {
@@ -96,9 +96,25 @@
   transition: background-color 0.3s ease;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   opacity: 0;
-  animation: fadeInButton 1s ease-in-out 3.5s forwards; 
+  animation: fadeInButton 1s ease-in-out 3.5s forwards;
 }
 
 .cta-button:hover {
   background-color: #2a5f79;
+}
+
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem; 
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem; 
+  }
+
+  .cta-button {
+    padding: 10px 20px; 
+    font-size: 0.9rem;
+  }
 }

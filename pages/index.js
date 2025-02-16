@@ -10,11 +10,11 @@ import Tools from '../components/services/Tools';
 import Services from '../components/home/Services';
 import Portfolio from '../components/home/Portfolio';
 
-export default function Home({ navbar, footer, title, subtitle, ctaText, ctaLink, challengesTitle, challenges, solutionsTitle, solutions, servicesTitle, services, portfolioTitle, portfolioItems, category,tools }) {
+export default function Home({ navbar, footer, title, subtitle, ctaText, ctaLink, backgroundImage, challengesTitle, challenges, solutionsTitle, solutions, servicesTitle, services, portfolioTitle, portfolioItems, category,tools }) {
   return (
     <>
       <Navbar navbar={navbar} />
-      <HomeTitle title={title} subtitle={subtitle} ctaText={ctaText} ctaLink={ctaLink} />
+      <HomeTitle title={title} subtitle={subtitle} ctaText={ctaText} ctaLink={ctaLink} backgroundImage={backgroundImage} />
       <ChallengesSection title={challengesTitle} challenges={challenges} />
       <SolutionSection title={solutionsTitle} solutions={solutions} />
       <Services title={servicesTitle} services={services} /> 
@@ -44,6 +44,7 @@ export async function getStaticProps() {
       title: homeData.title || "Default Title",
       subtitle: homeData.subtitle || "Default Subtitle",
       ctaText: homeData.ctaText || "Default CTA Text",
+      backgroundImage: homeData.backgroundImage,
       ctaLink: homeData.ctaLink || "/default-link",
       challengesTitle: homeData.challengesTitle || "Challenges", 
       challenges: homeData.challenges || [],
