@@ -514,7 +514,6 @@ collections:
             label: "Text"
             widget: "text"
   
-
   - name: "service"
     label: "Service"
     folder: "content/service"
@@ -552,7 +551,7 @@ collections:
                 widget: "text"
       - name: "help"
         label: "Hilfe"
-        widget: "list"
+        widget: "object"
         fields:
           - name: "header"
             label: "Title"
@@ -565,13 +564,16 @@ collections:
             widget: "string"
           - name: "management"
             label: "Management"
-            widget: "list"
+            widget: "object"
             fields:
               - name: "name"
                 label: "Name"
                 widget: "string"
               - name: "email"
                 label: "Email"
+                widget: "string"
+              - name: "phone"
+                label: "Phone"
                 widget: "string"
               - name: "position"
                 label: "Position"
@@ -582,8 +584,8 @@ collections:
               - name: "xing"
                 label: "Xing"
                 widget: "string"
-               - name: "LinkedIn"
-                label: "linkedin"
+              - name: "linkedin"
+                label: "LinkedIn"
                 widget: "string"
       - name: "category"
         label: "Kategorie"
@@ -609,7 +611,6 @@ collections:
             label: "Klasse"
             widget: "list"
             fields:
-              - label: "Class"
-                name: "class"
+              - name: "class"
+                label: "Class"
                 widget: "string"
-
