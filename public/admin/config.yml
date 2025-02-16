@@ -87,20 +87,33 @@ collections:
             name: "image"
             widget: "image"
 
-      # Expertise Section
-      - name: "expertiseTitle"
-        label: "Expertise Section Title"
-        widget: "string"
-      - name: "knowledgeItems"
-        label: "Expertise Section (Knowledge Items)"
+      - name: "category"
+        label: "Kategorie"
         widget: "list"
         fields:
-          - label: "Item Title"
-            name: "title"
+          - name: "name"
+            label: "Name"
             widget: "string"
-          - label: "Icon"
-            name: "icon"
+          - name: "class"
+            label: "Klasse"
+            widget: "string"
+      - name: "tools"
+        label: "Tools"
+        widget: "list"
+        fields:
+          - name: "name"
+            label: "Name"
+            widget: "string"
+          - name: "image"
+            label: "Image"
             widget: "image"
+          - name: "class"
+            label: "Klasse"
+            widget: "list"
+            fields:
+              - name: "class"
+                label: "Class"
+                widget: "string"
 
       # Portfolio Section
       - name: "portfolioTitle"
