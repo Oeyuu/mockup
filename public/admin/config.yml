@@ -602,7 +602,7 @@ collections:
           - name: "class"
             label: "Klasse"
             widget: "list"
-            field:
+            fields:
               - label: "Class"
                 name: "class"
                 widget: "string"
