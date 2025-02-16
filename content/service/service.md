@@ -55,6 +55,8 @@ help:
     email: "akram.osman@teclify.com"
     phone: "+23 1518231359"
     position: "Projektmanager"
+    xing: https://www.xing.com/profile/Akram_Osman
+    linkedin: https://www.linkedin.com/in/akram-osman
     image: /img/background.jpeg
 
 category:

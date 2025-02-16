@@ -1,4 +1,5 @@
 import styles from '../../styles/services/HelpBox.module.css';
+import { FaLinkedin, FaXing } from 'react-icons/fa';
 
 const HelpBox = ({ help }) => {
     return (<section className={styles.section}>
@@ -13,18 +14,36 @@ const HelpBox = ({ help }) => {
             </a>
 
         </div>
-        <div className={styles.management}>
-        <div className={styles.image}>
-        <img src={help.management.image} alt="Profile Image"></img>
+        <div className={styles.managementProfile}>
+            <div className={styles.profileImage}>
+                <img
+                    src={help.management.image}
+                    alt={`Profile of ${help.management.name}`}
+                />
             </div>
-            <div className={styles.name}>
-            <h3>{help.management.name}</h3>
-            </div>
-            <div className={styles.email}>
-            <h3>{help.management.email}</h3>
-            </div>
-            <div className={styles.phone}>
-            <h3>{help.management.phone}</h3>
+            <div className={styles.profileInfo}>
+                <h3 className={styles.name}>{help.management.name}</h3>
+                <div className={styles.contactInfo}>
+                    <p className={styles.contactItem}>
+                        <a href={`mailto:${help.management.email}`}>{help.management.email}</a>
+                    </p>
+                    <p className={styles.contactItem}>
+                        <a href={`tel:${help.management.phone}`}>{help.management.phone}</a>
+                    </p>
+                    <div className={styles.links}>
+                        {help.management.xing && (
+                            <a href={help.management.xing} target="_blank" rel="noopener noreferrer">
+                                <FaXing size={24} /> 
+                            </a>
+                        )}
+                        {help.management.linkedin && (
+                            <a href={help.management.linkedin} target="_blank" rel="noopener noreferrer">
+                                <FaLinkedin size={24} /> 
+                            </a>
+                        )}
+                    </div>
+                </div>
+                
             </div>
         </div>
     </section>);
