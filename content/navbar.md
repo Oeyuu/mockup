@@ -5,11 +5,8 @@ navbar:
       href: "/aboutus"
     - name: "Portfolio"
       href: "/portfolio"
-      dropdown:
-        - name: "Services"
-          href: "/services"
-        - name: "Expertise"
-          href: "/expertise"
+    - name: "Services"
+      href: "/services"
     - name: "Karriere"
       href: "/career"
   contactButton:

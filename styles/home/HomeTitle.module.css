@@ -2,7 +2,7 @@
 
 .hero-section {
   padding: 50px 0;
-  height: 80vh;
+  height: 100dvh;
   background-image: url('/img/home-blurred.png');
   background-size: cover;
   background-position: center;
@@ -11,6 +11,31 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden; 
+}
+
+@keyframes fadeInBackground {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hero-section {
+  animation: fadeInBackground 1s ease-in-out forwards;
+}
+
+@keyframes slideInTitle {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero-title {
@@ -21,6 +46,19 @@
   font-weight: bold;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  animation: slideInTitle 1s ease-in-out 1.5s forwards;
+}
+
+@keyframes slideInSubtitle {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero-subtitle {
@@ -30,6 +68,19 @@
   margin-bottom: 2rem;
   text-align: center;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  opacity: 0; 
+  animation: slideInSubtitle 1s ease-in-out 2.5s forwards; 
+}
+
+@keyframes fadeInButton {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .cta-button {
@@ -44,6 +95,8 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  animation: fadeInButton 1s ease-in-out 3.5s forwards; 
 }
 
 .cta-button:hover {
