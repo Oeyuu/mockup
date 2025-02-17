@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 
 const TitleSection = ({ title, description, image }) => {
   return (
@@ -9,7 +8,7 @@ const TitleSection = ({ title, description, image }) => {
         <p>{description}</p>
       </div>
       <div className="title-image">
-        <Image src={image} alt={title} layout="responsive" width={600} height={300} />
+        <img src={image} alt={title} />
       </div>
     </section>
   );

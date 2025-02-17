@@ -24,7 +24,7 @@
 .categoryButtons {
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: flex-start;
     gap: 1rem;
     margin-bottom: 2rem;
 }
@@ -32,7 +32,7 @@
 .categoryButtons button {
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     padding: 0.5rem 1rem;
     border: none;
     background-color: transparent;
