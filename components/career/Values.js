@@ -5,27 +5,32 @@ const Values = ({ values }) => {
     const [activeIndex, setActiveIndex] = useState(null);
 
     return (
-        <section>
-            <ul className={styles.honeycomb}>
-                {values.map((value, index) => (
-                    <li
-                        className={styles.honeycombCell}
-                        key={index}
-                        onClick={() => setActiveIndex(index)}
-                    >
-                        <img
-                            className={styles.honeycombCellImage}
-                            src={value.image}
-                        />
-                        <div className={styles.honeycombCellTitle}>
-                            {value.name}
-                        </div>
-                    </li>
-                ))}
-                <li className={styles.honeycombCellPlaceholder} />
-            </ul>
-
-        </section>
+        
+           
+                <div className={styles.comb}>
+                    <div className={styles.container}>{
+                        values.map((value, index) => (
+                            <div key={value.name}
+                                className={`${styles.honeycombCell} ${activeIndex === index ? styles.active : ''}`}
+                                onMouseEnter={() => setActiveIndex(index)}
+                                onMouseLeave={() => setActiveIndex(null)}>
+                                <img
+                                    className={styles.honeycombCellImage}
+                                    src={value.image}
+                                />
+                                <div className={styles.honeycombContent}>
+                                    {activeIndex === index ? (
+                                        <p>{value.description}</p> 
+                                    ) : (
+                                        <h3>{value.name}</h3> 
+                                    )}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+           
+        
     );
 };
 
