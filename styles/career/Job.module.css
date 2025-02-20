@@ -1,8 +1,6 @@
 .section {
     display: flex;
     align-items: center;
-    min-height: 500px;
-    height: 60vh;
     gap: 5%;
     padding: 4rem;
     background-color: #357A98;
@@ -49,3 +47,20 @@
     color: #d6d6d6;
 }
 
+
+@media (max-width: 700px) {
+    .section {
+        display: flex;
+        flex-direction: column;
+    align-items: center;
+    }
+
+    .content {
+        gap: 2rem;
+    }
+
+    .button {
+        height: 40px;
+        font-size: 14px;
+    }
+}
