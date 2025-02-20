@@ -73,6 +73,9 @@ values:
   - name: "Work-Life-Balance"
     description: "Ja auch hier kann was wichtiges zu Work Life Balance stehen"
     image: "/img/background.jpeg"
-  
+job:
+  name: "Dein Job bei Teclify"
+  description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore."
+  link: "idk yet"
 
 ---

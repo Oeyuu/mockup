@@ -7,14 +7,16 @@ import Footer from '../components/Footer';
 import Title from '../components/Title';
 import CareerInfo from '../components/career/CareerInfo';
 import Values from '../components/career/Values';
+import Job from '../components/career/Job';
 
-export default function CareerPage({ navbar, footer, title, description, image,careerInfo, values}) {
+export default function CareerPage({ navbar, footer, title, description, image,careerInfo, values, job}) {
   return (
     <>
       <Navbar navbar={navbar} />
       <Title title={title} description={description} image={image} />
       <CareerInfo careerInfo={careerInfo} />
       <Values values={values} />
+      <Job job = {job}/>
       <Footer footer={footer} />
     </>
   );
@@ -42,6 +44,7 @@ export async function getStaticProps() {
       image: careerData.image,
       careerInfo: careerData.careerInfo,
       values: careerData.values,
+      job: careerData.job,
     },
   };
 }
