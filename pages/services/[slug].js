@@ -21,7 +21,6 @@ export default function ServiceDetailPage({
   help
 }) {
   const router = useRouter();
-
   return (
     <>
       <Navbar navbar={navbar} />
@@ -46,7 +45,7 @@ export async function getStaticPaths() {
     const serviceFileContent = fs.readFileSync(serviceFilePath, 'utf8');
     const { data: serviceData } = matter(serviceFileContent);
 
-    // Generiere Pfade für alle Services
+  
     const paths = serviceData.services.map((service) => ({
       params: { slug: service.link.replace('/services/', '') },
     }));

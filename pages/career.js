@@ -12,7 +12,7 @@ import Job from '../components/career/Job';
 export default function CareerPage({ navbar, footer, title, description, image,careerInfo, values, job}) {
   return (
     <>
-      <Navbar navbar={navbar} />
+      {/* <Navbar navbar={navbar} /> */}
       <Title title={title} description={description} image={image} />
       <CareerInfo careerInfo={careerInfo} />
       <Values values={values} />

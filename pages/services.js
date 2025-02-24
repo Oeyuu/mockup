@@ -11,7 +11,7 @@ export default function ServicesPage({ navbar, footer, title, description, image
     <>
       <Navbar navbar={navbar} />
       <Title title={title} description={description} image={image} />
-      <div className="divider"></div>
+
       <ServicesSection services={services} />
       <Footer footer={footer} />
     </>
