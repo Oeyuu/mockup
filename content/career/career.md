@@ -20,7 +20,7 @@ careerInfo:
       description: "hier die description und mehr informationen die darauf stehen könnten aber ich habe nicht viel lust zu tippen hier die description und mehr informationen die darauf stehen könnten aber ich habe nicht viel lust zu tippen hier die description und mehr informationen die darauf stehen könnten aber ich habe nicht viel lust zu tippen hier die description und mehr informationen die darauf stehen könnten aber ich habe nicht viel lust zu tippen hier die description und mehr informationen die darauf stehen könnten aber ich habe nicht viel lust zu tippen hier die description und mehr informationen die darauf stehen könnten aber ich habe nicht viel lust zu tippen"
 values:
   - name: "Fortbildung"
-    description: "hier kann irgendwas zu einer fortbildung stehen etc."
+    description: "hier kann irgendwas zu einer fortbildung stehen etc. hier kann irgendwas zu einer fortbildung stehen etc. hier kann irgendwas zu einer fortbildung stehen etc. hier kann irgendwas zu einer fortbildung stehen etc. hier kann irgendwas zu einer fortbildung stehen etc. hier kann irgendwas zu einer fortbildung stehen etc. hier kann irgendwas zu einer fortbildung stehen etc. hier kann irgendwas zu einer fortbildung stehen etc."
     image: "/img/background.jpeg"
   - name: "Work-Life-Balance"
     description: "Ja auch hier kann was wichtiges zu Work Life Balance stehen"
