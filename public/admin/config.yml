@@ -270,7 +270,7 @@ collections:
  
 
   - name: "error"
-    label: "Error"
+    label: "Fehlerseite"
     folder: "content/error"
     create: true
     slug: "{{slug}}"
@@ -279,9 +279,6 @@ collections:
         label: "Items"
         widget: "object"
         fields:
-          - name: "image"
-            label: "Image"
-            widget: "image"
           - name: "header"
             label: "Header"
             widget: "string"
