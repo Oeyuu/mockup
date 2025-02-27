@@ -15,8 +15,8 @@ export default function Home({ navbar, footer, title, subtitle, ctaText, ctaLink
     <>
       <Navbar navbar={navbar} />
       <HomeTitle title={title} subtitle={subtitle} ctaText={ctaText} ctaLink={ctaLink} backgroundImage={backgroundImage} />
-      <ChallengesSection title={challengesTitle} challenges={challenges} />
-      <SolutionSection title={solutionsTitle} solutions={solutions} />
+      {/* <ChallengesSection title={challengesTitle} challenges={challenges} /> */}
+      {/* <SolutionSection title={solutionsTitle} solutions={solutions} /> */}
       <Services title={servicesTitle} services={services} /> 
       <Tools category={category} tools={tools} />
       <Portfolio title={portfolioTitle} portfolioItems={portfolioItems} />
