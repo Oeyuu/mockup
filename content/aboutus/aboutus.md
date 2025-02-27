@@ -41,12 +41,14 @@ values:
 management:
   - name: Akram Osman
     email: akram.osman@teclify.com
+    phone: +49 176 14375319
     position: Geschäftsführung
     image: /img/background.jpeg
     xing: https://www.xing.com/profile/Akram_Osman
     linkedin: https://www.linkedin.com/in/akram-osman
   - name: Sem Zerezghi
     email: sem.zerezghi@teclify.com
+    phone: +49 176 14375319
     position: Geschäftsführung
     image: /img/background.jpeg
     xing: https://www.xing.com/profile/Sem_Zerezghi
