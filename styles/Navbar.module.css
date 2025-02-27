@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.navbar {
+    display: flex; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: transparent; 
+    box-shadow: none; 
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.navbar.scrolled {
+    background-color:  #E5F6FB;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.logo img {
+    object-fit: contain;
+    width: 200px;
+}
+
+.links li a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #E5F6FB;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+.links.scrolled li a {
+    color: #333;
+}
+
+.links li a:hover {
+    color: #357A98;
+}
+
+.links {
+    list-style: none;
+}
+
+.links li {
+    display: inline-block;
+    padding: 0 1rem;
+}
+
+.contact_button {
+    background-color:  transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: #E5F6FB;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border:#E5F6FB solid;
+    transition: all 0.3s ease 0s;
+}
+
+.contact_button.scrolled {
+    color: #333;
+    border: #333 solid;
+}
+
+.contact_button:hover {
+    color:  #E5F6FB;
+    background-color: #357A98;
+}
+

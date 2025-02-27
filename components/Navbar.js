@@ -1,41 +1,61 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import { useEffect } from 'react';
+import styles from '../styles/Navbar.module.css';
 
 const Navbar = ({ navbar }) => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const navbarElement = document.querySelector(`.${styles.navbar}`);
+      const linksElement = document.querySelector(`.${styles.links}`);
+      const contact_buttonElement = document.querySelector(`.${styles.contact_button}`);
+      if (window.scrollY > 50) {
+
+        navbarElement.classList.add(styles.scrolled);
+        linksElement.classList.add(styles.scrolled);
+        contact_buttonElement.classList.add(styles.scrolled);
+      } else {
+        navbarElement.classList.remove(styles.scrolled);
+        linksElement.classList.remove(styles.scrolled);
+        contact_buttonElement.classList.remove(styles.scrolled);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <nav className="navbar">
-      <div className="logo">
-        <Link href="/">
-          {/* <Image> innerhalb von <Link> ohne <a> */}
-          <Image src="/img/teclify-logo.png" alt="Teclify Logo" width={80} height={80} />
-        </Link>
+    <nav className={styles.navbar}>
+      <div className={styles.logo}>
+        <a href="/">
+          <img src="/img/teclify-logo.png" alt="Teclify Logo" />
+        </a>
       </div>
-      <ul className="navbar-links">
+      <ul className={styles.links}>
         {navbar.links.map((link, index) => (
-          <li key={index} className="nav-item">
-            <Link href={link.href}>
+          <li key={index} className={styles.link_item}>
+            <a href={link.href}>
               {link.name}
               {link.dropdown && <span className="dropdown-icon">▼</span>}
-            </Link>
+            </a>
             {link.dropdown && (
-              <ul className="dropdown">
+              <ul className={styles.dropdown}>
                 {link.dropdown.map((item, i) => (
                   <li key={i}>
-                    <Link href={item.href}>
+                    <a href={item.href}>
                       {item.name}
-                    </Link>
+                    </a>
                   </li>
                 ))}
               </ul>
             )}
           </li>
         ))}
-        <li>
-          <Link href={navbar.contactButton.href} className="contact-button">
-            {navbar.contactButton.label}
-          </Link>
-        </li>
       </ul>
+      <a href={navbar.contactButton.href}>
+        <button className={styles.contact_button}>
+          {navbar.contactButton.label}
+        </button>
+      </a>
     </nav>
   );
 };

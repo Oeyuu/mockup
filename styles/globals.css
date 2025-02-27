@@ -1,6 +1,6 @@
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #F0FAFC; 
-  box-sizing: border-box;
+  margin: auto;
+  padding: auto;
+  background-color: #F0FAFC;
+  overflow:auto;
 }

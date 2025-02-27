@@ -23,6 +23,9 @@ collections:
       - name: "ctaLink"
         label: "CTA Link"
         widget: "string"
+      - name: "backgroundImage"
+        label: "Background Image"
+        widget: "image"
 
       # Challenges Section
       - name: "challengesTitle"
