@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import { motion } from 'framer-motion';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import HomeTitle from '../components/home/HomeTitle';
@@ -10,20 +11,63 @@ import Tools from '../components/services/Tools';
 import Services from '../components/home/Services';
 import Portfolio from '../components/home/Portfolio';
 
-export default function Home({ navbar, footer, title, subtitle, ctaText, ctaLink, backgroundImage, challengesTitle, challenges, solutionsTitle, solutions, servicesTitle, services, portfolioTitle, portfolioItems, category,tools }) {
+export default function Home({ navbar, footer, title, subtitle, ctaText, ctaLink, backgroundImage, challengesTitle, challenges, solutionsTitle, solutions, servicesTitle, services, portfolioTitle, portfolioItems, category, tools }) {
   return (
     <>
       <Navbar navbar={navbar} />
       <HomeTitle title={title} subtitle={subtitle} ctaText={ctaText} ctaLink={ctaLink} backgroundImage={backgroundImage} />
-      {/* <ChallengesSection title={challengesTitle} challenges={challenges} /> */}
-      {/* <SolutionSection title={solutionsTitle} solutions={solutions} /> */}
-      <Services title={servicesTitle} services={services} /> 
-      <Tools category={category} tools={tools} />
-      <Portfolio title={portfolioTitle} portfolioItems={portfolioItems} />
+      
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7, ease: "easeOut",  delay: 0.3 }}
+      >
+        <ChallengesSection title={challengesTitle} challenges={challenges} />
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7, ease: "easeOut",  delay: 0.3 }}
+      >
+         <SolutionSection title={solutionsTitle} solutions={solutions} />
+      </motion.div>
+
+
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7, ease: "easeOut", delay: 0.3}}
+      >
+        <Services title={servicesTitle} services={services} />
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7, ease: "easeOut",  delay: 0.3 }}
+      >
+        <Tools category={category} tools={tools} />
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7, ease: "easeOut",  delay: 0.3 }}
+      >
+        <Portfolio title={portfolioTitle} portfolioItems={portfolioItems} />
+      </motion.div>
+
       <Footer footer={footer} />
     </>
   );
 }
+
 export async function getStaticProps() {
   const homeFilePath = path.join(process.cwd(), 'content', 'home', 'index.md');
   const homeFileContent = fs.readFileSync(homeFilePath, 'utf8');

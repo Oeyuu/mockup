@@ -31,10 +31,25 @@
     object-fit: contain;
     width: 200px;
 }
+.links {
+    list-style: none;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+
+.links li {
+    display: inline-block;
+    padding:  0.5rem;
+    
+}
+
+
 
 .links li a {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 500;
     color: #E5F6FB;
     text-decoration: none;
@@ -49,14 +64,6 @@
     color: #357A98;
 }
 
-.links {
-    list-style: none;
-}
-
-.links li {
-    display: inline-block;
-    padding: 0 1rem;
-}
 
 .contact_button {
     background-color: transparent;
@@ -64,11 +71,13 @@
     font-size: 1rem;
     color: #E5F6FB;
     cursor: pointer;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
     border-radius: 20px;
     border: #E5F6FB solid;
     transition: all 0.3s ease 0s;
 }
+
+
 
 .contact_button.scrolled {
     color: #333;
@@ -81,17 +90,16 @@
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .navbar {
         display: flex;
         padding: 1rem;
         justify-content: flex-end;
+        background-color: #E5F6FB;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
 
-    .navbar.scrolled {
-        background-color: transparent;
-        box-shadow: none;
-    }
+   
 
     .logo {
         position: absolute;
@@ -147,7 +155,7 @@
 
     .bars .line {
         fill: none;
-        stroke: #eeee;
+        stroke: #333;
         stroke-width: 4;
         stroke-linecap: square;
     }

@@ -1,18 +1,37 @@
 import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
 import styles from '../styles/Navbar.module.css';
 
 const Navbar = ({ navbar }) => {
-  
-  const [isMobile, setIsMobile] = useState(true);
+  const router = useRouter(); 
+  const isHomepage = router.pathname === '/'; 
+  const [isMobile, setIsMobile] = useState(false);
+
+  const toggleScrolledClasses = (add) => {
+    const navbarElement = document.querySelector(`.${styles.navbar}`);
+    const linksElement = document.querySelector(`.${styles.links}`);
+    const contactButtonElement = document.querySelector(`.${styles.contact_button}`);
+
+    if (navbarElement && linksElement && contactButtonElement) {
+      if (add) {
+        navbarElement.classList.add(styles.scrolled);
+        linksElement.classList.add(styles.scrolled);
+        contactButtonElement.classList.add(styles.scrolled);
+      } else {
+        navbarElement.classList.remove(styles.scrolled);
+        linksElement.classList.remove(styles.scrolled);
+        contactButtonElement.classList.remove(styles.scrolled);
+      }
+    }
+  };
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const handleResize = () => {
-        setIsMobile(window.innerWidth <= 700);
+        setIsMobile(window.innerWidth <= 800);
       };
 
       handleResize();
-
       window.addEventListener('resize', handleResize);
       return () => window.removeEventListener('resize', handleResize);
     }
@@ -21,25 +40,24 @@ const Navbar = ({ navbar }) => {
   useEffect(() => {
     if (typeof window !== 'undefined' && !isMobile) {
       const handleScroll = () => {
-        const navbarElement = document.querySelector(`.${styles.navbar}`);
-        const linksElement = document.querySelector(`.${styles.links}`);
-        const contactButtonElement = document.querySelector(`.${styles.contact_button}`);
-
-        if (window.scrollY > 50) {
-          navbarElement.classList.add(styles.scrolled);
-          linksElement.classList.add(styles.scrolled);
-          contactButtonElement.classList.add(styles.scrolled);
-        } else {
-          navbarElement.classList.remove(styles.scrolled);
-          linksElement.classList.remove(styles.scrolled);
-          contactButtonElement.classList.remove(styles.scrolled);
+        if (isHomepage) {
+          toggleScrolledClasses(window.scrollY > 50);
         }
       };
 
-      window.addEventListener('scroll', handleScroll);
-      return () => window.removeEventListener('scroll', handleScroll);
+      if (isHomepage) {
+        window.addEventListener('scroll', handleScroll);
+        handleScroll(); 
+      } else {
+        toggleScrolledClasses(true);
+      }
+
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+        if (!isHomepage) toggleScrolledClasses(false);
+      };
     }
-  }, []);
+  }, [isMobile, isHomepage]);
 
   return (
     <>
@@ -57,21 +75,14 @@ const Navbar = ({ navbar }) => {
                 <li key={index} className={styles.link_item}>
                   <a href={link.href}>
                     {link.name}
-                    {link.dropdown && <span className="dropdown-icon">▼</span>}
+                   
                   </a>
-                  {link.dropdown && (
-                    <ul className={styles.dropdown}>
-                      {link.dropdown.map((item, i) => (
-                        <li key={i}>
-                          <a href={item.href}>{item.name}</a>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
+                  
                 </li>
               ))}
             </ul>
-            <a href={navbar.contactButton.href}>
+
+              <a href={navbar.contactButton.href}>
               <button className={styles.contact_button}>
                 {navbar.contactButton.label}
               </button>
@@ -108,15 +119,7 @@ const Navbar = ({ navbar }) => {
                       {link.name}
                       {link.dropdown && <span className="dropdown-icon">▼</span>}
                     </a>
-                    {link.dropdown && (
-                      <ul className={styles.sidebar_dropdown}>
-                        {link.dropdown.map((item, i) => (
-                          <li key={i}>
-                            <a href={item.href}>{item.name}</a>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
+                   
                   </li>
                 ))}
               </ul>
