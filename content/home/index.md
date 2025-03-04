@@ -66,13 +66,25 @@ services:
     description: Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam
       nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
       diam voluptua.
-    buttonLink: xyz
+    buttonLink: /services/consulting
     image: /img/home-blurred.png
   - title: Projektplanung
     description: Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam
       nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
       diam voluptua.
-    buttonLink: xyz
+    buttonLink: services/consulting
+    image: /img/home-blurred.png
+  - title: Blabla
+    description: Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam
+      nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+      diam voluptua.
+    buttonLink: /services/consulting
+    image: /img/home-blurred.png
+  - title: Xingfafng
+    description: Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam
+      nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+      diam voluptua.
+    buttonLink: /services/consulting
     image: /img/home-blurred.png
 portfolioTitle: Portfolio
 portfolioItems:

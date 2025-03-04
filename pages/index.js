@@ -21,7 +21,7 @@ export default function Home({ navbar, footer, title, subtitle, ctaText, ctaLink
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.7, ease: "easeOut",  delay: 0.3 }}
+        transition={{ duration: 0.5, ease: "easeOut",  delay: 0.2 }}
       >
         <ChallengesSection title={challengesTitle} challenges={challenges} />
       </motion.div>
@@ -30,7 +30,7 @@ export default function Home({ navbar, footer, title, subtitle, ctaText, ctaLink
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.7, ease: "easeOut",  delay: 0.3 }}
+        transition={{ duration: 0.5, ease: "easeOut",  delay: 0.2 }}
       >
          <SolutionSection title={solutionsTitle} solutions={solutions} />
       </motion.div>
@@ -40,7 +40,7 @@ export default function Home({ navbar, footer, title, subtitle, ctaText, ctaLink
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.7, ease: "easeOut", delay: 0.3}}
+        transition={{ duration: 0.5, ease: "easeOut", delay: 0.2}}
       >
         <Services title={servicesTitle} services={services} />
       </motion.div>
@@ -49,7 +49,7 @@ export default function Home({ navbar, footer, title, subtitle, ctaText, ctaLink
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.7, ease: "easeOut",  delay: 0.3 }}
+        transition={{ duration: 0.5, ease: "easeOut",  delay: 0.2 }}
       >
         <Tools category={category} tools={tools} />
       </motion.div>
@@ -58,7 +58,7 @@ export default function Home({ navbar, footer, title, subtitle, ctaText, ctaLink
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.7, ease: "easeOut",  delay: 0.3 }}
+        transition={{ duration: 0.5, ease: "easeOut",  delay: 0.2 }}
       >
         <Portfolio title={portfolioTitle} portfolioItems={portfolioItems} />
       </motion.div>

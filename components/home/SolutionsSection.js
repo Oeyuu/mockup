@@ -4,24 +4,23 @@ import styles from '../../styles/home/SolutionsSection.module.css';
 
 const SolutionSection = ({ title, solutions }) => {
   return (
-    <section className={styles['solution-section']}>
-      <h2>{title}</h2>
+    <section className={styles.section}>
+      <h2 className={styles.title}>{title}</h2>
 
       {solutions.map((solution, index) => (
         <div
           key={index}
-          className={`${styles['solution-item']} ${
+          className={`${styles.solutionItem} ${
             index % 2 !== 0 ? styles.reverse : ''
           }`}
         >
-          <Image 
+          <div className={styles.image}>
+          <img 
             src={solution.image} 
             alt={solution.title} 
-            width={350} 
-            height={250} 
-            className={styles['solution-image']} 
           />
-          <div className={styles['solution-content']}>
+          </div>
+          <div className={styles.content}>
             <h3>{solution.title}</h3>
             <p>{solution.description}</p>
             <ul>
