@@ -85,8 +85,9 @@
 
 @media (max-width: 660px) {
   .form {
-    margin: auto;
-    width: auto;
+    margin: 0;
+    width: 90%;
+    min-width: 200px;
   }
 
 }

@@ -63,15 +63,19 @@
   .title-content p {
     font-size: 0.95rem;
   }
-
+  
   .title-image-wrapper {
+    display: none;
+  }
+
+  /* .title-image-wrapper {
     max-width: 100%;
   }
 
   .title-image {
     width: 90%;
     height: auto;
-  }
+  } */
 }
 
 @media (max-width: 400px) {

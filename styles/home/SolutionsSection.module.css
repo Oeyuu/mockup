@@ -108,6 +108,7 @@
    flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 90%;
   }
 }
 
@@ -121,6 +122,10 @@
 }
 
 @media (max-width: 768px) {
+  .section {
+    padding: 20px;
+   
+  }
 
 
   .title {
@@ -133,6 +138,13 @@
 }
 
 @media (max-width: 480px) {
+  .section {
+    padding: 10px;
+  }
+
+  .solutionItem {
+    width: 95%;
+  }
   .title {
     font-size: 1.4rem;
   }

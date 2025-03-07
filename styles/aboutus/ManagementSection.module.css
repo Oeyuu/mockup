@@ -8,7 +8,12 @@
 }
 
 
-  
+.grid {
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    width: 90dvw;
+}
 
 .managementProfile {
     justify-self: center;
@@ -95,7 +100,13 @@
     color: #3182ce;
   }
   
-  @media (max-width: 480px) {
+  @media (max-width: 786px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 400px) {
     .managementProfile {
       grid-template-columns: 1fr;
     }

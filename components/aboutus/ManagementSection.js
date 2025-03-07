@@ -7,78 +7,47 @@ const ManagementSection = ({ management }) => {
   return (
     <section className={styles.section
     }>
-      {management.map((member, index) => (
-        <div className={styles.managementProfile}>
-          <div className={styles.profileImage}>
-            <img
-              src={member.image}
-              alt={`Profile of ${member.name}`}
-            />
-          </div>
-          <div className={styles.profileInfo}>
-            <h3 className={styles.name}>{member.name}</h3>
-            <div className={styles.contactInfo}>
-              <p className={styles.contactItem}>
-                <a href={`mailto:${member.email}`}>{member.email}</a>
-              </p>
-              <p className={styles.contactItem}>
-                <a href={`tel:${member.phone}`}>{member.phone}</a>
-              </p>
-              <p className={styles.contactItem}>
-                <a href={`tel:${member.position}`}>{member.position}</a>
-              </p>
-              <div className={styles.links}>
-                {member.xing && (
-                  <a href={member.xing} target="_blank" rel="noopener noreferrer">
-                    <FaXing size={24} />
-                  </a>
-                )}
-                {member.linkedin && (
-                  <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
-                    <FaLinkedin size={24} />
-                  </a>
-                )}
-              </div>
-            </div>
 
-          </div>
-        </div>
-      ))}
-
-      {/* <div className={styles['management-grid']}>
+      <div className={styles.grid}>
         {management.map((member, index) => (
-          <div key={index} className={styles['management-card']}>
-            <div className={styles['management-image']}>
-              <Image
+          <div className={styles.managementProfile}>
+            <div className={styles.profileImage}>
+              <img
                 src={member.image}
-                alt={member.name}
-                width={150}
-                height={150}
-                objectFit="cover"
+                alt={`Profile of ${member.name}`}
               />
             </div>
-            <div className={styles['management-content']}>
-              <h3>{member.name}</h3>
-              <p className={styles['management-email']}>
-                <a href={`mailto:${member.email}`}>{member.email}</a>
-              </p>
-              <p className={styles['management-position']}>{member.position}</p>
-              <div className={styles['management-links']}>
-                {member.xing && (
-                  <a href={member.xing} target="_blank" rel="noopener noreferrer">
-                    <FaXing size={50} />
-                  </a>
-                )}
-                {member.linkedin && (
-                  <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
-                    <FaLinkedin size={50} />
-                  </a>
-                )}
+            <div className={styles.profileInfo}>
+              <h3 className={styles.name}>{member.name}</h3>
+              <div className={styles.contactInfo}>
+                <p className={styles.contactItem}>
+                  <a href={`mailto:${member.email}`}>{member.email}</a>
+                </p>
+                <p className={styles.contactItem}>
+                  <a href={`tel:${member.phone}`}>{member.phone}</a>
+                </p>
+                <p className={styles.contactItem}>
+                  <a href={`tel:${member.position}`}>{member.position}</a>
+                </p>
+                <div className={styles.links}>
+                  {member.xing && (
+                    <a href={member.xing} target="_blank" rel="noopener noreferrer">
+                      <FaXing size={24} />
+                    </a>
+                  )}
+                  {member.linkedin && (
+                    <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
+                      <FaLinkedin size={24} />
+                    </a>
+                  )}
+                </div>
               </div>
+
             </div>
           </div>
         ))}
-      </div> */}
+
+      </div>
     </section>
   );
 };

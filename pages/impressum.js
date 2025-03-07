@@ -5,9 +5,7 @@ import matter from 'gray-matter';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Title from '../components/Title';
-import ContactCard from '../components/contact/ContactCard';
 import Impressum from '../components/impressum/Impressum';
-import styles from '../styles/impressum/Impressum.module.css';
 
 export default function impressumPage({ navbar, footer, title, description, image,contactInfo, impressum
  }) {
@@ -15,11 +13,7 @@ export default function impressumPage({ navbar, footer, title, description, imag
     <>
       <Navbar navbar={navbar} />
       <Title title={title} description={description} image={image} />
-      <div className={styles.impressumContainer}>
-        <ContactCard contactInfo={contactInfo} />
-       
-        <Impressum {...impressum} />
-      </div>
+      <Impressum {...impressum} contactInfo={contactInfo} />
       <Footer footer={footer} />
     </>
   );
