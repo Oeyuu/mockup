@@ -36,3 +36,15 @@
     color: #666;
     flex-grow: 1; 
 }
+
+@media screen and (max-width: 460px) {
+    .section {
+        padding: 10px;
+      }
+    
+      .grid {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    
+     
+    }

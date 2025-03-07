@@ -1,48 +1,45 @@
-.divider {
-  width: 100%;
-  height: 2px;
-  background-color: #B0C4DE;
-  margin: 0 auto;
+.section {
+  padding: 50px;
+  margin: auto;
 }
 
-.services-section {
-  padding: 50px 0;
-}
-
-.services-section h2 {
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  margin-bottom: 40px;
-  font-size: 36px;
 }
 
-.service-item {
-  display: flex;
-  align-items: stretch;
+
+.items {
   margin-bottom: 60px;
 }
 
-.service-item.reverse {
-  flex-direction: row-reverse;
+
+.items.reverse {
+  direction: rtl;
 }
 
-.service-content {
-  flex: 1;
+.content {
   padding: 20px;
   text-align: center;
+  direction: ltr;
 }
 
-.service-content h3 {
+.content h3 {
   font-size: 28px;
   margin-bottom: 20px;
 }
 
-.service-content p {
+.content p {
   font-size: 16px;
   line-height: 1.6;
   margin-bottom: 30px;
 }
 
-.service-button {
+.button {
   display: inline-block;
   padding: 10px 20px;
   background-color: #2a5f79;
@@ -52,19 +49,26 @@
   margin: 0 auto;
 }
 
-.service-button:hover {
+.button:hover {
   background-color: #72a7e1;
 }
 
-.service-image-wrapper {
-  flex: 1;
-  position: relative;
-  min-width: 300px;
-  height: auto;
-}
 
-.service-image {
+.image {
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+
+@media screen and (max-width: 660px) {
+.section {
+    padding: 10px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+ 
 }

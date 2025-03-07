@@ -3,7 +3,7 @@
     grid-template-columns: 50% 45%;
     align-items: center;
     min-height: 500px;
-    height: 60vh;
+    height: auto;
     gap: 5%;
     padding: 4rem;
     background-color: #357A98;

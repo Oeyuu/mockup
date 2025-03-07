@@ -1,6 +1,9 @@
 .section {
     padding: 4rem;
     background-color: #357A98;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
 }
 
 
@@ -13,10 +16,12 @@
     color: white;
     text-align: center;
 }
+
 .content {
     display: grid;
     grid-template-columns: repeat(auto-fit, 11rem);
     align-items: center;
+    justify-content: center;
     gap: 10px;
     flex-direction: row;
 }

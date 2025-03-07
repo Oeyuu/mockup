@@ -7,8 +7,8 @@ const TitleSection = ({ title, description, image }) => {
         <h1>{title}</h1>
         <p>{description}</p>
       </div>
-      <div className="title-image">
-        <img src={image} alt={title} />
+      <div className="title-image-wrapper">
+        <img className="title-image" src={image} alt={title} />
       </div>
     </section>
   );

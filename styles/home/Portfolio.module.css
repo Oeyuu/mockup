@@ -4,26 +4,30 @@
   text-align: center;
 }
 
-.portfolio-item {
+.items {
+  display: grid;
+  grid-template-rows: 1r 1fr;
   background: white;
   border-radius: 15px;
-  padding: 15px;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   margin: 50px;
 }
 
-.portfolio-image {
+.items img {
   width: 100%;
-  height: auto;
-  border-radius: 15px;
+  height: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
 }
 
-.portfolio-content {
+
+.content {
   padding: 15px;
 }
 
-.h2 {
+.title {
   font-size: 2rem;
   margin-bottom: 30px;
 }
