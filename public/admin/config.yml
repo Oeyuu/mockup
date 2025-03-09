@@ -186,9 +186,9 @@ collections:
 
   - name: "footer"
     label: "Footer"
-    delete: false
-    editor:
-      preview: false
+     extension: "md"
+    create: true
+    slug: "{{slug}}"
     files:
       - name: "footer"
         label: "Footer"
