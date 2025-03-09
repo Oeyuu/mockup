@@ -140,8 +140,7 @@ collections:
  
   - name: "navbar"
     label: "Navbar"
-    folder: "content"
-    file: "navbar.md"
+    file: "content/navbar.md"
     extension: "md"
     create: true
     slug: "{{slug}}"
@@ -182,8 +181,7 @@ collections:
 
   - name: "footer"
     label: "Footer"
-    folder: "content"
-    file: "footer.md"
+    file: "content/footer.md"
     extension: "md"
     slug: "{{slug}}"
     create: true
@@ -234,9 +232,6 @@ collections:
           - name: "link"
             label: "Link"
             widget: "string"
-
-
-
 
 
   - name: "services"
@@ -396,7 +391,6 @@ collections:
             widget: "string"
 
 
-
   - name: "contact"
     label: "Contact"
     folder: "content/contact"
@@ -470,7 +464,6 @@ collections:
               - name: "href"
                 label: "URL"
                 widget: "string"
-
 
 
   - name: "impressum"
@@ -582,6 +575,7 @@ collections:
             label: "Text"
             widget: "text"
   
+
   - name: "service"
     label: "Service"
     folder: "content/service"
