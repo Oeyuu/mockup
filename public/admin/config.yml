@@ -136,11 +136,21 @@ collections:
             name: "image"
             widget: "image"
 
-
+  - name: "test"
+    label: "Test"
+    folder: "content"
+    files:
+      - name: "test"
+        label: "Test"
+        extension: "md"
+        file: "test"
+        fields:
+          - name: "name"
+            label: "Name"
+            widget: "string"
  
   - name: "navbar"
     label: "Navbar"
-    extension: "md"
     folder: "content"
     slug: "{{slug}}"
     files:
