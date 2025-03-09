@@ -135,27 +135,15 @@ collections:
           - label: "Image"
             name: "image"
             widget: "image"
-
-  - name: "test"
-    label: "Test"
-    files:
-      - name: "test"
-        label: "Test"
-        file: "content/test.md"
-        fields:
-          - name: "name"
-            label: "Name"
-            widget: "string"
  
+
   - name: "navbar"
     label: "Navbar"
-    folder: "content"
     slug: "{{slug}}"
     files:
       - name: "navbar"
         label: "Navbar"
-        extension: "md"
-        file: "navbar"
+        file: "content/navbar.md"
         fields:
         - name: "links"
           label: "Links"
@@ -195,13 +183,11 @@ collections:
 
   - name: "footer"
     label: "Footer"
-    folder: "content"
     slug: "{{slug}}"
     files:
       - name: "footer"
         label: "Footer"
-        extension: "md"
-        file: "footer"
+        file: "content/footer.md"
         fields:
           - name: "logo"
             label: "Logo"
