@@ -138,12 +138,10 @@ collections:
 
   - name: "test"
     label: "Test"
-    folder: "content"
     files:
       - name: "test"
         label: "Test"
-        extension: "md"
-        file: "test"
+        file: "content/test.md"
         fields:
           - name: "name"
             label: "Name"
