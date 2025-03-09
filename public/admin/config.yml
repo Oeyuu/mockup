@@ -186,13 +186,13 @@ collections:
 
   - name: "footer"
     label: "Footer"
-     extension: "md"
+    extension: "md"
     create: true
     slug: "{{slug}}"
     files:
       - name: "footer"
         label: "Footer"
-        file: "content/footer.md"
+        file: "/content/footer.md"
         fields:
           - name: "logo"
             label: "Logo"
