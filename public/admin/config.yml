@@ -188,7 +188,7 @@ collections:
     extension: "md"
     slug: "{{slug}}"
     create: true
-     files:
+    files:
       - name: "footer"
         label: "Footer"
         file: "content/footer.md"
