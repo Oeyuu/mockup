@@ -142,12 +142,12 @@ collections:
     label: "Navbar"
     extension: "md"
     folder: "content"
-    create: true
     slug: "{{slug}}"
     files:
       - name: "navbar"
         label: "Navbar"
-        file: "navbar.md"
+        extension: "md"
+        file: "navbar"
         fields:
         - name: "links"
           label: "Links"
@@ -187,14 +187,13 @@ collections:
 
   - name: "footer"
     label: "Footer"
-    extension: "md"
     folder: "content"
-    create: true
     slug: "{{slug}}"
     files:
       - name: "footer"
         label: "Footer"
-        file: "footer.md"
+        extension: "md"
+        file: "footer"
         fields:
           - name: "logo"
             label: "Logo"
