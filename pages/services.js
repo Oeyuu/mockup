@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import { motion } from 'framer-motion';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import ServicesSection from '../components/services/ServiceSection';
@@ -11,8 +12,14 @@ export default function ServicesPage({ navbar, footer, title, description, image
     <>
       <Navbar navbar={navbar} />
       <Title title={title} description={description} image={image} />
-
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
+      >
       <ServicesSection services={services} />
+      </motion.div>
       <Footer footer={footer} />
     </>
   );

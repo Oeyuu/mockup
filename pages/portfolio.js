@@ -2,6 +2,7 @@ import React from 'react';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import { motion } from 'framer-motion';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Title from '../components/Title';
@@ -10,16 +11,51 @@ import ServicesListing from '../components/portfolio/ServicesListing';
 import Tools from '../components/services/Tools';
 import References from '../components/portfolio/References';
 
-export default function PortfolioPage({ navbar, footer, title, description,image, portfolioSection, services, category, tools, references }) {
+export default function PortfolioPage({ navbar, footer, title, description, image, portfolioSection, services, category, tools, references }) {
 
   return (
     <>
       <Navbar navbar={navbar} />
-      <Title title={title} description={description} image={image} />
-      <PortfolioSection portfolioSection={portfolioSection} />
-      <ServicesListing services={services} />
-      <Tools category={category} tools={tools} />
-      <References references={references} />
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
+      >
+        <Title title={title} description={description} image={image} />
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
+      >
+        <PortfolioSection portfolioSection={portfolioSection} />
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
+      >
+        <ServicesListing services={services} />
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
+      >
+        <Tools category={category} tools={tools} />
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
+      >
+        <References references={references} />
+      </motion.div>
       <Footer footer={footer} />
     </>
   );

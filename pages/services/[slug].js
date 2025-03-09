@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
@@ -24,10 +25,40 @@ export default function ServiceDetailPage({
   return (
     <>
       <Navbar navbar={navbar} />
-      <Title title={title} description={description} image={image} />
-      <Service service={service} />
-      <Tools category={category} tools={tools} />
-      <HelpBox help={help} />
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
+      >
+        <Title title={title} description={description} image={image} />
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
+      >
+        <Service service={service} />
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
+      >
+
+        <Tools category={category} tools={tools} /> 
+        </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
+      >
+
+        <HelpBox help={help} />
+      </motion.div>
       <Footer footer={footer} />
     </>
   );
@@ -45,7 +76,7 @@ export async function getStaticPaths() {
     const serviceFileContent = fs.readFileSync(serviceFilePath, 'utf8');
     const { data: serviceData } = matter(serviceFileContent);
 
-  
+
     const paths = serviceData.services.map((service) => ({
       params: { slug: service.link.replace('/services/', '') },
     }));
