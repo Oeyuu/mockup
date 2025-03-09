@@ -83,8 +83,8 @@ export async function getStaticProps() {
 
   return {
     props: {
-      navbar: navbarData.navbar,
-      footer: footerData.footer,
+      navbar: navbarData,
+      footer: footerData,
       title: homeData.title || "Default Title",
       subtitle: homeData.subtitle || "Default Subtitle",
       ctaText: homeData.ctaText || "Default CTA Text",

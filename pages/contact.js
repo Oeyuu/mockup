@@ -38,8 +38,8 @@ export async function getStaticProps() {
 
   return {
     props: {
-      navbar: navbarData.navbar,
-      footer: footerData.footer,
+      navbar: navbarData,
+      footer: footerData,
       title: contactData.title,
       description: contactData.description,
       image: contactData.image,

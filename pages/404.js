@@ -31,8 +31,8 @@ export async function getStaticProps() {
 
   return {
     props: {
-      navbar: navbarData.navbar,
-      footer: footerData.footer,
+      navbar: navbarData,
+      footer: footerData,
       errorItems: errorPageData.errorItems,
     },
   };

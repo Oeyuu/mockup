@@ -94,8 +94,8 @@ export async function getStaticProps({ params }) {
 
     return {
       props: {
-        navbar: navbarData.navbar || [],
-        footer: footerData.footer || [],
+        navbar: navbarData || [],
+        footer: footerData || [],
         title: serviceData.title || '',
         description: serviceData.description || '',
         image: serviceData.image || '',
