@@ -11,14 +11,21 @@ export default function ServicesPage({ navbar, footer, title, description, image
   return (
     <>
       <Navbar navbar={navbar} />
-      <Title title={title} description={description} image={image} />
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
       >
-      <ServicesSection services={services} />
+        <Title title={title} description={description} image={image} />
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
+      >
+        <ServicesSection services={services} />
       </motion.div>
       <Footer footer={footer} />
     </>
