@@ -34,10 +34,18 @@ facts:
     title: Abgeschlossene Projekte
     description: "60"
 values:
-  title: Unsere Werte
-  graphic: /img/background.jpeg
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
-    Praesent libero. Sed cursus ante dapibus diam.
+  - title: Unsere Werte
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+  - title: Chicki Masala
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+  - title: Unsere Werte
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. um dolor sit amet, consectetur adipiscing elit Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. um dolor sit amet, consectetur adipiscing elit Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. um dolor sit amet, consectetur adipiscing elit Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. um dolor sit amet, consectetur adipiscing elit Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. um dolor sit amet, consectetur adipiscing elit Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. um dolor sit amet, consectetur adipiscing elit Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. 
+  - title: Freedom 
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+  - title: Unsere Werte 
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+  - title: Lassn
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit Integer nec odio. Praesent libero
 management:
   - name: Akram Osman
     email: akram.osman@teclify.com

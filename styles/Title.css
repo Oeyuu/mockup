@@ -7,7 +7,7 @@
   margin-top: 100px;
   background-color: #F0FAFC;
   position: relative;
-  padding: 20px;
+  padding: 20px 0 20px 20px;
   gap: 20px;
 }
 
@@ -40,11 +40,13 @@
   width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 0 0 0 10px;
 }
 
-/* Responsive Anpassungen */
+
 @media (max-width: 768px) {
+
+
   .title-section {
     flex-direction: column;
     text-align: center;
@@ -54,14 +56,15 @@
 
   .title-content {
     padding: 20px;
+    text-align: center;
   }
 
   .title-content h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .title-content p {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
   
   .title-image-wrapper {
@@ -84,7 +87,7 @@
   }
 
   .title-content p {
-    font-size: 0.85rem;
+    font-size: 1rem;
   }
 
   .title-section {

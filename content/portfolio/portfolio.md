@@ -107,4 +107,16 @@ tools:
       - "all"
 
 references:
+  - title: "Marshle"
+    description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidu..."
+    image: /img/background.jpeg
+  - title: "Marshle"
+    description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidu..."
+    image: /img/background.jpeg
+  - title: "WacDonalds Projects"
+    description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
+    image: /img/background.jpeg
+  - title: "Valorant App & Web"
+    description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidu..."
+    image: /img/background.jpeg
 ---

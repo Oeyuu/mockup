@@ -120,10 +120,10 @@
          max-width: 90dvh;
     }
     .content h1 {
-        font-size: 1.5rem; 
+        font-size: 1.3rem; 
     }
 
     .content p {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 }

@@ -61,7 +61,21 @@
     
 }
 
-@media screen and (max-width: 460px) {
+
+@media screen and (max-width: 850px) {
+    .section {
+        padding: 20px;
+      }
+    
+      .grid {
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
+      }
+    
+     
+    }
+
+
+@media screen and (max-width: 580px) {
     .section {
         padding: 10px;
       }
