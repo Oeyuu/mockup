@@ -114,41 +114,44 @@ collections:
         file: "content/components/tools.md"
         fields:
           # Tools Section (Laden von externen Markdown-Datei)
+          -name: "title"
+            label: "Title"
+            widget: "string"
           - name: "category"
             label: "Kategorie"
             widget: "list"
             fields:
               - name: "category"
-                label: "Category"
+                label: "Kategorie"
                 widget: "list"
                 fields:
                   - name: "name"
                     label: "Name"
                     widget: "string"
                   - name: "class"
-                    label: "Class"
+                    label: "Klasse"
                     widget: "string"
           
           - name: "tools"
-            label: "Tools"
+            label: "Technologien"
             widget: "list"
             fields:
               - name: "tools"
-                label: "Tools"
+                label: "Technologien"
                 widget: "list"
                 fields:
                   - name: "name"
-                    label: "Tool Name"
+                    label: "Technologie"
                     widget: "string"
                   - name: "image"
-                    label: "Tool Image"
+                    label: "Bild"
                     widget: "image"
                   - name: "class"
-                    label: "Tool Classes"
+                    label: "Klassen"
                     widget: "list"
                     fields:
                       - name: "class"
-                        label: "Class"
+                        label: "Klasse"
                         widget: "string"
 
           
