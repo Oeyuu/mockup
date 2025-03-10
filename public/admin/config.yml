@@ -147,7 +147,8 @@ collections:
         fields:
         - name: "links"
           label: "Links"
-          widget: "object"
+          widget: "list"
+          max: 4
           fields:
             - name: "name"
               label: "Name"
