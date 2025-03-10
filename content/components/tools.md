@@ -1,4 +1,5 @@
 ---
+title: Technologie
 category:
   - name: "Alle"
     class: "all"

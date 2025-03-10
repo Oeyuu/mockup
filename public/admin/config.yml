@@ -90,15 +90,45 @@ collections:
             name: "image"
             widget: "image"
 
+      # Tools Section (Laden von externen Markdown-Datei)
       - name: "category"
         label: "Kategorie"
         widget: "file"
-        file: "content/components/tools.md"  # Hier wird der Pfad zur externen Datei angegeben
-
+        file: "content/components/tools.md"
+        fields:
+          - name: "category"
+            label: "Category"
+            widget: "list"
+            fields:
+              - name: "name"
+                label: "Name"
+                widget: "string"
+              - name: "class"
+                label: "Class"
+                widget: "string"
+      
       - name: "tools"
         label: "Tools"
         widget: "file"
         file: "content/components/tools.md"
+        fields:
+          - name: "tools"
+            label: "Tools"
+            widget: "list"
+            fields:
+              - name: "name"
+                label: "Tool Name"
+                widget: "string"
+              - name: "image"
+                label: "Tool Image"
+                widget: "image"
+              - name: "class"
+                label: "Tool Classes"
+                widget: "list"
+                fields:
+                  - name: "class"
+                    label: "Class"
+                    widget: "string"
 
       # Portfolio Section
       - name: "portfolioTitle"
